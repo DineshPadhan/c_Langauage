@@ -1,0 +1,253 @@
+daf to input the radious a circle and display the area.
+
+Start
+Let r,a,p as float
+input r
+a=2*3.14*r
+p=3.14*r*r
+print a
+print p
+stop
+
+daf input f and convert into c		c=(f-32)*5/9
+
+Start
+Let c,f as float
+input f
+c=(f-32)*5/9
+print c
+stop
+
+daf to findout d area and peremeter of a circle
+a=2*3.14*r
+p=3.14*r*r
+
+
+Start
+Let r,a,p as float
+input r
+a=2*3.14*r
+p=3.14*r*r
+print a
+print p
+stop
+
+
+daf to input l, b and display the area of rect
+
+Start
+Let l,b,a as int
+input l,b
+a=l*b
+print a
+stop
+
+
+daf to input dv and convert into day  n month
+
+m=dv/30
+d=dv%30
+
+Start
+Let dv,m,d as int
+input dv
+m=dv/30
+d=dv%30
+print m
+print d
+stop
+
+daf to accept a number and check odd or even
+
+Start
+Let a as int
+input a
+if a%2==0		print odd
+
+print even
+
+stop
+
+daf to input d age and display voter or not
+
+Start
+Let age as int
+input age
+if age>=18	You are not a voter
+
+You are a voter
+
+stop
+
+Payment 
+	if bs<1500		hra = 10%		da=25%
+	else		hra=15%		da= 30%
+
+Start
+Let basic,hra,da,gross as float
+input basic
+if basic>15000		hra=(basic*10)/100;
+			da=(basic*25)/100
+hra=(basic*15)/100
+da=(basic*30)/100
+
+gross=basic+da+hra
+print gross
+stop
+
+
+daf to calculate the bonus
+
+Start
+Let cy, jy, yos, bonus as int
+input cy, jy
+yos=cy-jy
+if yos>5
+
+bonus=2500	bonus =0
+
+print bonus
+stop
+
+
+
+Start
+Let Mark as Int
+Let result as char
+
+Input Mark
+
+if mark >=450	Result = 1st Class
+
+if mark >=350	Result = 2nd Class
+
+if mark >=250	Result = 3rdClass
+
+Result = Fail
+
+print result
+
+Stop
+
+
+
+
+Start
+Let  p, r, bill as int
+input p
+
+if p>10	R=7
+
+if p>5	R=8
+
+R= 10
+
+bill= p*r
+
+Print bill
+
+Stop
+
+
+
+LOOP
+
+DAF to print "MIIT " for 200 times
+
+Start
+Let n as integer
+n=1
+if n<=200		stop
+print "MIIT"
+n=n+1
+
+DAF to print all even number from 10 to 50
+
+Start
+Let n as integer
+n=10
+if n<=50		stop
+print n
+n=n+2
+
+DAF to print 1st 50 Natural Number and Display the sum
+
+Start
+Let n,sum as integer
+n=1;
+sum=0
+
+if n<=50		print sum		stop
+print n
+sum=sum+n
+n=n+1
+
+
+DAF to calculate the average mark of 20 students
+
+Start
+Let i,m,t,av as int
+i=1, t=0;
+if i <=20	print t	av=t/20	print av	stop
+input m
+t=t+m
+i=i+1
+
+
+
+DAF to calculate the factorial value of n natural number
+
+Start
+Let n,i,fact as int
+fact=1,i=1
+input n
+if i<=n		print fact		stop
+fact=fact*i
+i=i+1
+
+
+Input a Number and reverse it
+
+Start
+Let num, i, rev as int
+rev=0
+input num
+if num>=1		print rev		stop
+i=num%10
+rev=rev*10+i
+num=num/10
+
+
+DAF to calculate 3 sets of Simple Interest
+
+Start
+Let n,p,t,r,i as float
+n=1
+if n<=3		stop
+input ptr
+i=p*t*r/100
+print i
+n=n+1
+
+Input a Name & Reverse It.
+
+Start
+Let nm,nw as string
+input nm
+if(nm>=1)		stop
+nw=right(nm,1)
+print nw
+nm=nm-1
+
+
+DAF to input a number and calculate the addition of digits.
+
+Start
+Let num,i,sum as int
+sum=0
+input num
+if (num>=1)		print sum		stop
+i=num%10;
+sum=sum+i
+num=num/10
+

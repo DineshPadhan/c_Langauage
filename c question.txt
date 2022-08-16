@@ -1,0 +1,218 @@
+Introduction to C
+Variable
+One Way Statement
+	Practical Problems & Answers
+Decision Control Structure
+	If
+	If....Else
+	If...... Else if........... Else
+	Nested If
+Loop
+	While
+	Do.... While
+	For
+	Switch Case
+Function & Pointer
+	User Defined Function
+	1) No Argument No Return Value	sum()
+	2) No Argument Return Value		x=sum()
+	3) Argument No Return Value		sum(10,2)
+	4) Argument with Return Value	x=sum(10,2)
+
+mul	ptr	ftc	aoc
+fact	digsum	power	rev
+
+
+Preprocessor
+Array
+	One Dimentional Array 
+	Calculation with Array
+	Two Dimensional Array
+	Multi Dimensional Array
+	Calculation with MultiDimensional Array
+String Function
+	Strlen
+	Strcpy
+	Strcat
+	Strcmp
+	More.................15 Function about String Operation
+Structure
+	Simple Structure
+	Structure withArray
+	Structure with array and calculation
+
+C Questions
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. PRT (Simple Interest)
+6. Check Voter or Not (>18)
+7. Check Positive/Negetive Number 
+8. Mark =Average, Percentage & Total
+9. Mark to Division (Nested If)
+10. Accept the Color Code and Show the Rainbow. (Switch Case )
+11. Accept two Number and Operator  and Calculate (Switch Case)
+12. Accept the Day Serial Number and Display the Day Name (Nested If / Switch Case)
+13. Accept the 1st Letter of Days and Display the Day Name (Nested If / Switch Case)
+14. Enter Three Number and Display Greater Number
+15. Enter a Character and Check whether it is vowel or not (Switch Case)
+16. Employee Working Hour to Complete the work and Comment as per the Effeciency (Book)
+17. Display 1 to 10 Natural Number (by while loop)
+18. Display 10 to 1 Natural Number (by while loop)
+19. Display 1 to 10 Natural Number (by do....... while loop)
+20. Display 10 to 1 Natural Number (by do..........while loop)
+21. Display 1 to 10 and 10 to 1 Natural Number (while loop)
+22. Enter a Number and Calculate its Factorial Value
+23. Enter a three digit number and reverse it.
+24. Display 1 to 10 Natural Number (by for loop)
+25. Display all Even Number from 1 to 100  using for loop
+26. Display all Odd Number from 1 to 100  using for loop
+27. Display 1 to 10 Natural  Numebr and Display the Summation
+28. Display a to z Capital Letter using ASCII Value
+29. Display a to z Small Letter using ASCII Value
+30. Display Like this
+	1
+	22
+	333
+	4444
+	55555
+	666666
+31. Calender (Display 1 to 31 and Break on Every divisiable by 7)
+32. Multiplication Table
+33. Display Half Dimond
+34. Display Full Dimond
+35. Simple One Dimensional Array
+36. Simple Two Dimensional Array
+37. String Lower
+38. String Length
+39. String Copy
+40. String Comparison
+41. String Concatenate
+42. Call by Value
+43. Simple Structure
+44. Area of Circle
+45. Call by Reference
+==========================
+46.ramesh's basic salary is input through the keyboard.His dearness allowance is 40% of basic salary,and house rent allowance is 20% of basic salary.write a program to calculate his gross salary.
+
+47.The distance between two cities (in km.) is not input through the keyboard.Write a program to convert and print this distance in meters, feet, incehes and centimeters.
+
+48.if marks obtained by a student in five different subjects are input through the keyboard, find out the total marks and percentage marks obtained by the student. assume that the maximum marks that can be obtanied by a satudent in each subject is 100.
+
+49. tempreature of a city in fahrenheit degrees is input through the keyboard. write a program to convert this temperature into cenigrade degrees.
+
+50.the length & breadth of a rectangle and redius of circle are input through the keyboard. write a program to calculate the area & perimeter of the rectangle and the area and circumference of the circle.
+
+51. Two number are input through the keyboad into two location C and D. Write a program to interchange the contains of C and D.
+
+52. If a five digit number is input through the keyboard, write a program to calculate the sum of its digits. 
+============= DECESION CONTROL STRUCTURE
+53. While purchasing certain item, a discount of 10% is offered. If the quantity purchased is more than 1000; If quantity and price per item are input through the keyboard, write a program to calculate the total expenses. 
+
+54. The current year and the year in which the employee join the organization are entered through the keyboard, if the number of years for which the employee has served the organization is greater than three, than a bonus of Rs. 2500 is given to the employee, if the years of service are not greater than three than the program sould do nothing.
+
+55. In a company an employee is paid as under. If his basic salary is less than Rs. 1500, then HRA=10% of basic salary and DA=90% of basic salary. If his salary is either equal to  or above Rs. 1500, then HRA=Rs. 500 and DA=98% of basic salary. If the employees salary is input through the keyboard; write a program to find his gross salary.
+
+56. The marks obtained by a student in 5 different subjects are input through the keyboard, the students gets a division as per the following rules
+	Percentage above or equal to 60 = 1st Division
+	Percentage between 50 and 59 = 2nd Division
+	Percentage between 40 and 49 = 3rd Division
+	Percentage less than 40 = Fail
+Write a program to Calculate the Division Obtained by the student.
+
+57. A Company Insures its drivers in the following cases.
+	If the drive is married
+	If the drive is unmarried, male and above 30 years of age
+	If the drive is unmarried, female and above 25 years of age
+In all other cases, the driver is not insured, If the maritial status, sex and age of the driver are the inputs, write a progam to determine whether the drive is to be insured or not. 
+
+58. If Cost price and selling price of an item is input through the keyboard, write a program to determine wheter the seller has made profit or incurred loss, also determine how much profit he made or loss incurred.
+
+59. Any Integer is input through the keyboard, write a program to findout wheteher it is odd or even number. 
+
+60. Any year is input through the keyboard, write a program to determine whethe the year is a leap year or not.
+
+61. If the age of Ram, Shyam and Ajay are input through the keyboard, write a program to determine the youngest among three.
+
+62. Any Character is entered through the keyboard, write a program to determine whether the character entered is a capital letter, a small letter, a digit or a special symbol.
+The following  table shows the range of ASCII values for various characters.
+	A-Z		65-90
+	a-z		97-122
+	0-9		48-57
+	special symbol 	0-47, 58-64, 91-96, 123-127
+
+63. A Certain grade of steel is graded according to the following conditions.
+i) Hardness must be greater than 50
+ii) Carbon content must be less than 0.7
+iii) Tensile strength must be greater than 5600
+
+The Grades are as follows
+
+Grade is 10 if all three conditions are met.
+Grade is 9 if conditions (i) and (ii) are met
+Grade is 8 if conditions (ii) and (iii) are met
+Grade is 7 if conditions (i) and (iii) are met
+Grade is 6 if only one condition is met
+Grade is 5 if none of the conditions are met
+
+Write a program, which will require the user to give values of hardness, carbon content and tenslie strength of the steel under consideration and output the grade of the steel.
+
+64. A library charges a fine for every book returned late. For first 5 days the fine is 50 paise, for 6 to 10 days fine is one  rupee and above 10 days fine is 5 rupees. If you return the book after 30 days your membership will be cancelled, Write a program to accept the number of days the member is late to return the book and display the fine or the appropriate message.
+
+65. In a company, worker effeciency is determined on the basis of the time required for a worker to complete a particular job. If the time taken by the worker is between 2-3 hours, then the work is said to be highly efficient.  If the time required by the worker is 3-4 hour, then the worker is order to imporove speed. If the time taken is between 4-5 hours, the worker is given trainning to improve his speed. and if the time taken by the worker is more than 5 hours, then the worker has to leave the company. If the time taken by the worker is input through the keyboard, write a program to find  the efficiency of the worker.
+
+================= LOOP ================
+
+66. Write a program to calculate overtime pay of 10 employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour.
+
+67. Write a program to find the factorial value of any number entered through the keyboard..
+
+68. Two numbers are enterd through the keyboard, Write a program to find the value of one number raised to the power of another.
+
+69. Write a program to print all the ASCII values and their equivalent character using a while loop. The ASCII values vary from 0 to 255.
+================ FUNCTION ==============
+70. Write a funtion which receives a float and an int from main( )  , finds the product of these two and returns the product which printed through main().
+
+71. Example of Function (No Argument No Return Value) Addition
+72. Question of Function (No Argument No Return Value) Subtraction
+73. Question of Function (No Argument No Return Value) Multiplication
+74. Question of Function (No Argument No Return Value) Division
+75. Question of Function (No Argument No Return Value) Area of Circle
+76. Question of Function (No Argument No Return Value) Area of Rectangle
+77. Question of Function (No Argument No Return Value) Simple Interest
+78. Question of Function (No Argument No Return Value) Temperature
+
+79. Example of Function (Argument No Return Value) Addition
+80. Question of Function (Argument No Return Value) Subtraction
+81. Question of Function (Argument No Return Value) Multiplication
+82. Question of Function (Argument No Return Value) Division
+83. Question of Function (Argument No Return Value) Area of Circle
+84. Question of Function (Argument No Return Value) Area of Rectangle
+85. Question of Function (Argument No Return Value) Simple Interest
+86. Question of Function (Argument No Return Value) Temperature
+
+87. Example of Function (Argument with Return Value) Addition
+88. Question of Function (Argument With Return Value) Subtraction
+89. Question of Function (Argument With Return Value) Multiplication
+90. Question of Function (Argument With Return Value) Division
+91. Question of Function (Argument With Return Value) Area of Circle
+92. Question of Function (Argument With Return Value) Area of Rectangle
+93. Question of Function (Argument With Return Value) Simple Interest
+94. Question of Function (Argument With Return Value) Temperature
+========== PRE PROCESSOR ================
+95. #define PI = 3.14
+96. #define AND &&
+97. #define OR ||
+98 #define HLINE  for(i=0;i<=79;i++) printf("%c", 196);
+99 #define VLINE(x)  for(i=0;i<=24;i++) { gotoxy(x,i); printf("%c", 179);}
+============ ARRAY =============
+100. Addition of One Dimensional Array
+101. Addition of Two Dimensional Array
+102. Array Searching
+=========== STRING =============
+XXX.  Question 37 to 41
+============ STRUCTURE =========
+103. Structure with Array
+104. Calculation using Structure.(Calculating Total Bill Amount of 10 Books and Details)

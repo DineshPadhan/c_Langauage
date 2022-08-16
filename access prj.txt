@@ -1,0 +1,64 @@
+			TABLE
+Student Admission
+	Roll
+	Student Name
+	Father's Name
+	Address
+	Gender
+	Cell No
+	Email Address
+	Date of Birth
+	Course Admitted
+	Date of Admission
+	Picture
+Money Receipt
+	Date
+	Roll No
+	Fees
+	Remarks
+Library
+	Date of Issue
+	Roll No
+	Book Issued
+	Return Date
+Exam Report
+	Roll
+	Paper I (Theo)
+	Paper II (Theo)
+	Paper I (Prac)
+	Paper II (Prac)
+	Project
+			FORMS
+1. Admission
+2. Money Receipt
+3. Library
+4. Exam Report
+			QUERY
+1. Student Wise fees Report
+2. Telephone Register
+3. Student Wise Library Report
+4. Monthwise Fees Report
+5. Student Balance Report (Name, Books, Fees)
+6. Certificate
+	Slno
+	Roll No
+	Name
+	Course
+	Grade
+	Date of Issue
+			REPORT
+1. Student Database
+2. Student Wise Fees Details
+3. Monthwise Fees Report
+4. Telephone Register
+5. Student Wise Library Report
+6. Monthwise Fees Report
+7. Student Balance Report (Name, Books, Fees)
+			MACRO
+1. Quit the Access
+2. Close Form Admission
+3. Close Table Student Admission in Datasheet View
+4. Close the Report Student Database
+5. Print Preview of Student Database
+6. Print Preview of Student wise Fees Details
+7. Open Form Admission

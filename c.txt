@@ -1,0 +1,1965 @@
+/* Addition of Two Number */		Comment Line
+#include<stdio.h>			PreProcessor Header File
+main()				Main Function
+{				Start
+int a,b,c;				Integer Declaration
+printf("\n Enter two number ");		Prompt for Input
+scanf("%d %d" ,&a,&b);		Accept the Input Data
+c=a+b;				Calculation
+printf("\n The Addition Result is %d",c);	Prompt for Result
+}				Stop
+
+
+
+/* ...........................
+................................. */		multi line comment
+
+
+// ............................		single line comment
+
+
+
+
+
+
+
+*	aerestic
+{	Curly Bras
+[	square bracket
+(	round bracket
+/	front slash
+\	back slash
+&	empersand
+!	exclamatory mark
+~	tilde
+"	double quote
+'	single quote
+;	semi colon
+:	colon
+
+LCM
+HCF
+
+46.ramesh's basic salary is input through the keyboard.His dearness allowance is 40% of basic salary,and house rent allowance is 20% of basic salary.write a program to calculate his gross salary.
+#include<stdio.h>
+void main()
+{
+int basic,da,hra,gross;
+printf("Enter the Basic Salary ");
+scanf("%d",&basic);
+da=(basic*40)/100;
+hra=(basic*20)/100;
+gross=basic+da+hra;
+printf("\n The Gross salary is %d",gross);
+}
+
+/* Simple Interest */
+#include<stdio.h>
+void main()
+{
+int p,t,r,i;
+printf("Enter the Principal, Time & Rate ");
+scanf("%d %d %d",&p,&t,&r);
+i=(p*t*r)/100;
+printf("The Interest Amount is %d",i);
+}
+
+/* 46.ramesh's basic salary is input through the keyboard.His dearness allowance is 40% of basic salary,and house rent allowance is 20% of basic salary.write a program to calculate his gross salary.*/
+#include<stdio.h>
+void main()
+{
+int bs,da,hra,gs;
+printf("Enter the Basic salary of the employee ");
+scanf("%d",&bs);
+da=(bs*40)/100;
+hra=(bs*20)/100;
+gs=bs+da+hra;
+printf("\n The Gross Salary is %d",gs);
+}
+
+/* 46.ramesh's basic salary is input through the keyboard.His dearness allowance is 40% of basic salary,and house rent allowance is 20% of basic salary.write a program to calculate his gross salary.*/
+#include<stdio.h>
+void main()
+{
+float bs,da,hra,gs;
+printf("Enter the Basic salary of the employee ");
+scanf("%f",&bs);
+da=(bs*40)/100;
+hra=(bs*20)/100;
+gs=bs+da+hra;
+printf("\n The Gross Salary is %.2f",gs);
+}
+
+/* 47.The distance between two cities (in km.) is input through the keyboard.Write a program to convert and print this distance in meters, feet, incehes and centimeters.*/
+#include<stdio.h>
+void main()
+{
+float km,mtr,ft,in,cm;
+printf("Enter the Distance in Km ");
+scanf("%f",&km);
+mtr=km*1000;
+cm=mtr*100;
+ft=mtr*3.28;
+in=ft*12;
+printf("\n The Distance in Km is %.2f ",km);
+printf("\n The Distance in Meter is %.2f ",mtr);
+printf("\n The Distance in Centimeter is %.2f ",cm);
+printf("\n The Distance in Feet is %.2f ",ft);
+printf("\n The Distance in Inchs is %.2f ",in);
+}
+
+
+/* 48.if marks obtained by a student in five different subjects are input through the keyboard, find out the aggremente marks and percentage marks obtained by the student. assume that the maximum marks that can be obtanied by a student in each subject is 100. */
+
+#include<stdio.h>
+void main()
+{
+int a,b,c,d,e,avg,tot,per;
+printf("enter the marks of five subject ");
+scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+tot=a+b+c+d+e;
+avg=tot/5;
+per=(tot*100)/500;
+printf("\n The Total Mark is %d",tot);
+printf("\n The Average marks is %d",avg);
+printf("\n The Percentage Mark is %d%%",per);
+}
+
+49. tempreature of a city in fahrenheit degrees is input through the keyboard. write a program to convert this temperature into cenigrade degrees.
+#include<stdio.h>
+void main()
+{
+float c,f;
+printf("Enter the temperature in Ferhenite ");
+scanf("%f",&f);
+c=(f-32)*5/9;
+printf("\n The Centigrade degree is %f",c);
+}
+
+50.the length & breadth of a rectangle and radius of circle are input through the keyboard. write a program to calculate the area & perimeter of the rectangle and the area and circumference of the circle.
+#include<stdio.h>
+void main()
+{
+int l,b,aor,por,r,aoc,coc;
+printf("Enter the Length and Bredth of the rectangle ");
+scanf("%d %d",&l,&b);
+aor=l*b;
+por=2*l+b;
+printf("Enter the Radious of the Circle ");
+scanf("%d",&r);
+aoc=3.14*r*r;
+coc=2*3.14*r;
+printf("\n The Area of Rectangle is %d",aor);
+printf("\n The Peremeter of Recgangle is %d",por);
+printf("\n The Area of Circle is %d",aoc);
+printf("\n The Circumference of the Circle is %d",coc);
+}
+
+/* 51. Two number are input through the keyboad into two location C and D. Write a program to interchange the contins of C and D. */
+#include<stdio.h>
+void main()
+{
+int c,d,e;
+printf("\n Enter the Value of c and d ");
+scanf("%d %d",&c,&d);
+e=c;
+c=d;
+d=e;
+printf("\n The Value of c is %d and value of d is %d",c,d");
+}
+
+/* 52. If a five digit number is input through the keyboard, write a program to calculate the sum of its digits. 31912*/
+#include<stdio.h>
+void main()
+{
+int a,sum=0,i;
+printf("\n Enter the Value of a ");
+scanf("%d",&a);
+
+i=a%10;
+sum=sum+i;
+a=a/10;
+
+i=a%10;
+sum=sum+i;
+a=a/10;
+
+i=a%10;
+sum=sum+i;
+a=a/10;
+
+i=a%10;
+sum=sum+i;
+a=a/10;
+
+i=a%10;
+sum=sum+i;
+a=a/10;
+
+printf("\n The Sumation Value is %d",sum);
+}
+
+ /* 53. While purchasing a certain item, a discount of 10% is offered
+if the quantity purchased is more then 1000. If quantity and
+price per item are input through the keyboard,
+write a program to calculate the total expenses. */
+
+#include<stdio.h>
+void main()
+{
+float qty,rate,amt,dis=0;
+printf(" Enter the Quantity and rate ");
+scanf("%f %f",&qty,&rate);
+
+if(qty>1000)
+	dis=10;
+amt=(qty*rate)-(qty*rate*dis/100);
+printf("The Total Expense is %f",amt);
+}
+
+/* The current and the year in which the employee joined the organization
+are entered through the keyboard. If the number of years for which the
+employee has served the organization is greater than 3, then a
+bonus of Rs. 2500/- is given to the employee. If the year of service
+are not greater than 3, then the program should do nothing. */
+
+#include<stdio.h>
+void main()
+{
+int cy,jy,yos,bonus=0;
+printf("Enter the Current Year & Joining Year");
+scanf("%d %d",&cy,&jy);
+
+yos=cy-jy;
+
+if(yos>3)
+	bonus=2500;
+
+printf("Your Bonus Amount is Rs. %d",bonus);
+}
+
+
+/* In a company an employee is paid as under.
+If his basic salary is less than Rs. 1500 then HRA is 10% of basic salary and DA is 90% of basic salary. If his salary is either equal to or above Rs. 1500, then HRA is Rs. 500 and DA = 98% of basic salary. If the employee's salary is input through the keyboard write a program to find his gross salary.
+
+if sal >=1500
+	hra=500;
+	da=sal*98%
+else
+	hra=10%
+	da=sal*90%
+
+gross=sal+hra+da
+print gross
+
+#include<stdio.h>
+void main()
+{
+float bs,da,hra,gross;
+printf(" Enter the Basic Salary of the Employee ");
+scanf("%f",&bs);
+
+if(bs>=1500)
+{
+	hra=500;
+	da=(bs*98)/100;
+}
+else
+{
+	hra=(bs*10)/100;
+	da=(bs*90)/100;
+}
+gross=bs+da+hra;
+
+printf("The Gross Salary of the Employee is %f",gross);
+}
+
+
+/* The marks obtained by a student in 5 different subjects are input through the keyboard. The students gets a division as per the following rules.
+
+Percentage above or equal to 60= First Division
+Percentage between 50 to 59= Second Division
+Percentage between 40 to 49= Third Division
+Percentage less than 40 = Fail
+
+Write a program to calculate the division obtained by the student. */
+
+
+
+#include<stdio.h>
+void main()
+{
+int m1,m2,m3,m4,m5,per;
+printf("Enter the marks of 5 subjects ");
+scanf("%d %d %d %d %d",&m1,&m2,&m3,&m4,&m5);
+per=((m1+m2+m3+m4+m5)*100)/500;
+
+if(per>=60)
+	printf("First Class");
+else
+{
+	if(per>=50)
+		printf("Second Class");
+	else
+	{
+		if(per>=40)
+			printf("Third Class");
+		else
+			printf("Fail");
+	}
+}
+
+}
+
+============================== OR ===========================
+
+
+#include<stdio.h>
+void main()
+{
+int m1,m2,m3,m4,m5,per;
+printf("Enter the marks of 5 subjects ");
+scanf("%d %d %d %d %d",&m1,&m2,&m3,&m4,&m5);
+per=((m1+m2+m3+m4+m5)*100)/500;
+
+if(per>=60)
+	printf("First Class");
+if(per>=50 && per<=59)
+	printf("Second Class");
+if(per>=40 && per<=49)
+	printf("Third Class");
+if(per<40)
+	printf("Fail");
+}
+
+=-============================ OR ==============================
+#include<stdio.h>
+void main()
+{
+long int m1,m2,m3,m4,m5,per;
+printf("Enter the marks of 5 subjects ");
+scanf("%ld %ld %ld %ld %ld",&m1,&m2,&m3,&m4,&m5);
+per=((m1+m2+m3+m4+m5)*100)/500;
+if(per>=60)
+	printf("First Class");
+else if(per>=50)
+	printf("Second Class");
+else if(per>=40)
+	printf("Third Class");
+else
+	printf("Fail");
+}
+============================= OR ==============================
+#include<stdio.h>
+void main()
+{
+float m1,m2,m3,m4,m5,per;
+printf("Enter the marks of 5 subjects ");
+scanf("%f %f %f %f %f",&m1,&m2,&m3,&m4,&m5);
+per=((m1+m2+m3+m4+m5)*100)/500;
+
+if(per>=60)
+	printf("First Class");
+else if(per>=50)
+	printf("Second Class");
+else if(per>=40)
+	printf("Third Class");
+else
+	printf("Fail");
+}
+
+/* A company insures its drivers in the following cases.
+
+- If the driver is married.
+- If the driver is unmarried, male and above 30 years of age.
+- If the driver is unmarried, female and above 25 years
+In all other cases, the driver is not insured. If the martial status, sex and age of the driver are the inputs, Write a program to determine whether the driver is to be insured or not. ? */
+
+#include<stdio.h>
+void main()
+{
+char sex, ms;
+int age;
+
+printf("Enter the Age, Sex and martial status of the employee ");
+scanf ("%d %c %c",&age,&sex,&ms);
+
+if((ms=='M') || (ms=='U' && sex=='M' && age>=30) || (ms=='U' && sex=='F' && age>=25))
+	printf("Driver is insured");
+else 
+	printf("Driver is Not insured");
+}
+
+58. If Cost price and selling price of an item is input through the keyboard, write a program to determine wheter the seller has made profit or incurred loss, also determine how much profit he made or loss incurred.
+
+#include<stdio.h>
+void main()
+{
+int cp,sp;
+printf("Enter the Cost & Selling Price ");
+scanf("%d %d",&cp,&sp);
+if(sp>cp)
+	printf("\n You have made a Profit of Rs. %d",sp-cp);
+else
+	printf("\n You have  made a loss of Rs. %d",cp-sp);
+}
+
+
+59. Any Integer is input through the keyboard, write a program to findout wheteher it is odd or even number. 
+#include<stdio.h>
+void main()
+{
+int x;
+printf("Enter a Number ");
+scanf("%d",&x);
+if(x%2==0)
+	printf("\n Number is Even");
+else
+	printf("\n Number is Odd");
+}
+
+
+
+
+63) A certain grade of steel is graded according to the follwing conditions.
+
+i) Hardness must be greater than 50.
+ii) Carbon content must be less than 0.7.
+iii) Tensile strength must be greater than 5600.
+
+The Grades are as follows.
+
+Grade is 10 if all three condition are met.
+Grade is 9 if conditions (i) and (ii) are met
+Grade is 8 if conditions (ii) and (iii) are met
+Grade is 7 if conditions (i) and (iii) are met
+Grade is 6 if only one condition is met.
+Grade is 5 If none of the condition are met.
+
+Write a program, which will require the user to give values of hardness, carbon content and tensil strength and the steel under consideration and output the grade of the steel.
+
+d) A library charges a fine for every book returned late. For first 5 days the fine is 50 paise, for 6-10 days fine is one rupee and above 10  days fine is 5 rupees. If you return the book after 30 days your membership will be cancelled. Write a program to accept the number of days the member is late to return the book and display the fine or the appropriate message.
+
+g) In a company, worker efficiency is determined on the basis of the time required for a worker to complete a particluar job. If the time taken by the worker is between 2-3 hours, then the worker is said to be highly efficient. If the time required by the worker is between 3-4 hours, then the worker is ordered to improve speed. If the time taken is between 4-5 hours, the worker is given trainning to improve his speed, and if the time taken by the worker is more than 5 hours, then the worker has to leave the company. If the time taken by the worker is input through the keyboard, write a program to find the efficiency of the worker.
+
+
+
+============ TIPS OF QUESTION BANK===========
+printf input the cp and sp
+scan cp & sp
+if cp>sp
+	r=cp-sp
+	printf you have made a loss of rs. r
+else
+	r=sp-cp
+	printf you have made a profit of rs. r
+
+==============================
+
+printf enter a number
+scan x
+
+if(x%2==0)
+	printf it is an even number
+else
+	printf it is an odd number
+
+==============================
+
+printf enter a year
+scan y
+
+if((y%400==0) || (y%100!=0 && y%4==0)
+	printf it is a leap year
+else
+	printf it is not a leap year
+
+================================
+
+printf enter the age of ram,shyam and ajay
+scan r,s,a
+
+if (r<s && r<a)
+	printf Ram is Youngest
+if(s<r && s<a)
+	printf Shyam is Youngest
+if(a<s && a<r)
+	printf Ajay is Youngest
+================================
+
+printf Enter a Character
+scanf c
+
+if(c>=65 && c<=90)
+	printf It is a Capital Letter
+if(c>=97 && c<=122)
+	printf It is a Small Letter
+if(c>=48 && c<=57)
+	printf It is a Number
+if((c>=0 && c<=47) || (c>=58 && c<=64) || (c>=91 && c<=96) || (c>=123 && c<=127))
+	printf It is a Symbol
+================================
+
+
+
+float cc,h,ts;
+
+printf Enter the hardness, carbon content and tensil strength
+scanf %f %f %f, h,cc,ts;
+
+if(h>50 && cc<0.7 && ts>5600)
+	printf Grade 10
+else if(h>50 && cc<0.7)
+	printf Grade 9
+else if(cc<0.7 && ts>5600)
+	printf Grade 8
+else if(h>50 && ts>5600)
+	printf Grade 7
+else if(h>50 || cc<0.7 || ts>5600)
+	printf Grade 6
+else 
+	printf Grade 5
+
+================================================
+
+printf Enter the days to return the book
+scanf %d r
+
+if(r>30)
+	printf Membership Cancelled
+else if(r>10)
+	printf Fine is Rs. 5 Rupees
+else if(r>5)
+	printf Fine is Rs. 1 Rupees
+else
+	printf Fine is Rs. 0.50 Rupees
+=================================================
+printf Enter the time required for the employee
+scanf %d, t
+
+if(t>5)
+	printf Leave the Company
+else if(t>4)
+	printf You required Trainning
+else if(t>3)
+	printf You required to improve your speed
+else
+	printf You are Highly Efficient
+=====================================================
+
+			L    O    O    P 
+
+=====================================================
+#include<stdio.h>
+void main()
+{
+int a=1;					//INITIALIAZATION
+while(a<=10)				//CONDITION
+{
+printf("\n MIIT Computer Education");		//LOOPBODY
+a=a+1;					//INCREMENT
+}
+}
+
+
+//Write a program to print all natural number from 1 to 50;
+#include<stdio.h>
+void main()
+{
+int a=1;
+while(a<=50)
+{
+printf("%d \t",a);
+a=a+1;
+}
+}
+
+=====================================================
+//Write a program to print all natural number from 50 to 1;
+#include<stdio.h>
+void main()
+{
+int a=50;
+while(a>=1)
+{
+printf("%d \t",a);
+a=a-1;
+}
+}
+
+=====================================================
+//Write a program to print all natural number from 50 to 1 USING do.......... while loop;
+#include<stdio.h>
+void main()
+{
+int a=50;
+do
+{
+printf("%d \t",a);
+a=a-1;
+}while(a>=1);
+}
+
+
+//Write a program to print all natural number from 1 to 50 USING for loop;
+#include<stdio.h>
+void main()
+{
+int a;
+for(a=1;a<=50;a=a+1)
+{
+printf("%d \t",a);
+}
+}
+
+//Write a program to print all natural number from 50 to 1 USING for loop;
+#include<stdio.h>
+void main()
+{
+int a;
+for(a=50;a>=1;a--)
+{
+printf("%d \t",a);
+}
+}
+
+
+//Write a program to print all natural number from 1 to 10 and 10 to1 USING for loop;
+#include<stdio.h>
+void main()
+{
+int a,b;
+for(a=1,b=10;a<=10,b>=1;a++,b--)
+{
+printf("%d \t %d \n",a,b);
+}
+}
+
+27. Display 1 to 10 Natural  Numebr and Display the Summation
+#include<stdio.h>
+void main()
+{
+int a,sum=0;
+for(a=1;a<=10;a++)
+{
+printf("%d \t",a);
+sum=sum+a;
+}
+printf("\n The Sumation Value is %d",sum);
+}
+
+
+28. Display a to z Capital Letter using ASCII Value
+#include<stdio.h>
+void main()
+{
+int a;
+for(a=65;a<=90;a++)
+{
+printf("%c \t",a);
+}
+}
+
+/* 66. Write a program to calculate overtime pay of 10 employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour. */
+#include<stdio.h>
+void main()
+{
+int e=1,t,ot;
+do
+{
+printf("\n Enter the Employee Working Hour ");
+scanf("%d",&t);
+ot=t-40;
+if(ot>0)
+	printf("\n You have got Rs. %d as your Overtime Payment ",ot*12);
+else
+	printf("\n You have got No Overtime Payment ");
+e=e+1;
+}while(e<=10);
+}
+
+/* 67. Write a program to find the factorial value of any number entered through the keyboard. */
+#include<stdio.h>
+void main()
+{
+int fact=1,i;
+printf("Enter a Number ");
+scanf("%d",&i);
+do
+{
+fact=fact*i;
+i=i-1;
+}while(i>=1);
+printf("\n The Factorial Value is %d",fact);
+}
+
+
+
+=========== 25.09.2012 =============
+
+/* Q1 : Display all the Natural number from 1 to 50. using for loop */
+#include<stdio.h>
+void main()
+{
+int a;
+for(a=1;a<=50;a++)
+{
+printf("%d \t",a);
+}
+}
+
+/* Q2 : Display all the Odd Number from 1 to 50. using for loop */
+#include<stdio.h>
+void main()
+{
+int a;
+for(a=1;a<=50;a+=2)
+{
+printf("%d \t",a);
+}
+}
+
+/* Q3 : Display all the Even Number from 1 to 50. using for loop */
+#include<stdio.h>
+void main()
+{
+int a;
+for(a=0;a<=50;a+=2)
+{
+printf("%d \t",a);
+}
+}
+
+/* Q4 : Display a Multiplication Table.*/ 
+#include<stdio.h>
+void main()
+{
+int a,b;
+printf("Enter the Table Number ");
+scanf("%d",&b);
+for(a=1;a<=10;a++)
+{
+printf("%d x %d = %d\n",b,a,b*a);
+}
+}
+
+23. Enter a three digit number and reverse it.
+#include<stdio.h>
+void main()
+{
+int rev=0,num,i;
+printf("Enter the number ");
+scanf("%d",&num);
+
+while(num>1)
+{
+i=num%10;
+rev=rev*10+i;
+num=num/10;
+}
+printf("\n The Reverse Number is %d",rev);
+}
+
+
+
+/*  3 Sets of Simple Interest using for loop*/
+#include<stdio.h>
+void main()
+{
+float x,p,t,r,i;
+for(x=1;x<=3;x++)
+{
+printf("\n Enter the Principal, Time & Rate ");
+scanf("%f %f %f",&p,&t,&r);
+i=(p*t*r)/100;
+printf("\n The Simple Interest is  %f",i);
+}
+}
+
+/* 68. Two numbers are enterd through the keyboard, Write a program to find the value of one number raised to the power of another. */
+
+#include<stdio.h>
+void main()
+{
+int a,b,c,d=1;
+printf("Enter two number ");
+scanf("%d %d",&a,&b);
+for(c=1;c<=b;c++)
+{
+d=d*a;
+}
+printf("\n The Power Value is %d ",d);
+}
+
+/* 69. Write a program to print all the ASCII values and their equivalent character using a for loop. The ASCII values vary from 0 to 255. */
+
+#include<stdio.h>
+void main()
+{
+int x;
+for(x=0;x<=255;x++)
+{
+printf("%d=%c\t",x,x);
+}
+}
+
+/* 69. Write a program to print all the ASCII values and their equivalent character using a while loop. The ASCII values vary from 0 to 255. */
+
+#include<stdio.h>
+void main()
+{
+int x=0;
+while(x<=255)
+{
+printf("%d=%c\t",x,x);
+x++;
+}
+}
+
+/* 28. Display a to z Capital Letter using ASCII Value */
+#include<stdio.h>
+void main()
+{
+int x;
+for(x=65;x<=90;x++)
+{
+printf("%c\t",x);
+}
+}
+
+/* 29. Display a to z small Letter using ASCII Value */
+#include<stdio.h>
+void main()
+{
+int x;
+for(x=97;x<=122;x++)
+{
+printf("%c\t",x);
+}
+}
+
+/* 27. Display 1 to 10 Natural  Numebr and Display the Summation*/
+#include<stdio.h>
+void main()
+{
+int a,sum=0;
+for(a=1;a<=10;a++)
+{
+printf("%d \t",a);
+sum=sum+a;
+printf("\n The sumation value is %d",sum);
+}
+}
+
+/* 30. Display Like this
+	1
+	22
+	333
+	4444
+	55555
+	666666 */
+
+#include<stdio.h>
+void main()
+{
+int a,b;
+for(a=1;a<=6;a++)
+{
+for(b=1;b<=a;b++)
+{
+printf(" %d",a);
+}
+printf("\n");
+}
+}
+
+
+======================================================
+
+//Write a program to Accept a Number  & Display its Multiplication Table 
+#include<stdio.h>
+void main()
+{
+int a=1,b;
+printf("Enter the Table number ");
+scanf("%d",&b);
+
+while(a<=10)
+{
+printf("%d x %d = %d \n",b,a,b*a);
+a=a+1;
+}
+
+}
+
+/*  3 Sets of Simple Interest */
+#include<stdio.h>
+void main()
+{
+float x=1, p,t,r,i;
+while(x<=3)
+{
+printf("\n Enter the Principal, Time & Rate ");
+scanf("%f %f %f",&p,&t,&r);
+i=(p*t*r)/100;
+printf("\n The Simple Interest is  %f",i);
+x++;
+}
+}
+
+/*  5 Sets of Area of Circle */
+#include<stdio.h>
+void main()
+{
+float x=1, r,a;
+while(x<=5)
+{
+printf("\n Enter the Radious ");
+scanf("%f",&r);
+a=3.14*r*r;
+printf("\n The Area of Circle is  %f",a);
+x++;
+}
+}
+======================== 28.09.2012
+/* 31. Calender (Display 1 to 31 and Break on Every divisiable by 7) */
+#include<stdio.h>
+void main()
+{
+int a;
+printf("\t\tJANUARY\nS\tM\tT\tW\tT\tF\tS\n");
+for(a=1;a<=31;a++)
+{
+printf("%d \t",a);
+{
+if(a%7==0)
+	printf("\n");
+}}}
+
+/* 10. Accept the Color Code and Show the Rainbow. (Switch Case ) VIBGYOR */
+#include<stdio.h>
+void main()
+{
+int a;
+printf("Enter the Color Code ");
+scanf("%d",&a);
+switch(a)
+{
+case 1:
+	printf("\n This is Violet ");
+	break;
+case 2:
+	printf("\n This is Indigo ");
+	break;
+case 3:
+	printf("\n This is Blue ");
+	break;
+case 4:
+	printf("\n This is Green ");
+	break;
+case 5:
+	printf("\n This is Yellow ");
+	break;
+case 6:
+	printf("\n This is Orange ");
+	break;
+case 7:
+	printf("\n This is Red ");
+	break;
+default:
+	printf("\n This is Wrong Input ");
+}}
+
+/* 13. Accept the 1st Letter of Days and Display the Day Name (Nested If / Switch Case) */
+#include<stdio.h>
+void main()
+{
+char a;
+printf("Enter the Day Code ");
+scanf("%c",&a);
+switch(a)
+{
+case 's':
+	printf("\n This is Sunday ");
+	break;
+case 'm':
+	printf("\n This is Monday ");
+	break;
+case 't':
+	printf("\n This is Tuesday ");
+	break;
+case 'w':
+	printf("\n This is Wednesday ");
+	break;
+case 'h':
+	printf("\n This is Thursday ");
+	break;
+case 'f':
+	printf("\n This is Friday ");
+	break;
+case 'a':
+	printf("\n This is Saturday ");
+	break;
+default:
+	printf("\n This is Wrong Input ");
+}}
+
+/* 11. Accept two Number and a Operator  then Calculate as per the Operator (Switch Case) */
+#include<stdio.h>
+void main()
+{
+char op;
+int a,b,c;
+printf("Enter the Operator ");
+scanf("%c",&op);
+printf("Enter two Number ");
+scanf("%d %d",&a,&b);
+
+switch(op)
+{
+case '+':
+	c=a+b;
+	break;
+case '-':
+	c=a-b;
+	break;
+case '*':
+	c=a*b;
+	break;
+case '/':
+	c=a/b;
+	break;
+default:
+	printf("Wrong Input");
+}
+printf("\n The Result is %d ",c);
+}
+
+=======================================
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,c,d,e;
+float g,h,i,j,k;
+char ans='y';
+
+while(ans=='y')
+{
+clrscr();
+printf("\n ====================== MENU ===========================");
+printf("\n\n 1. Simple Interest ");
+printf("\n 2. Area & Peremeter of Circle ");
+printf("\n 3. Area of Rectangle ");
+printf("\n 4. Temperature from Ferhenite to Centigrade ");
+printf("\n 5. Display all Odd Number from 1 to 100 ");
+printf("\n 6. Display Even Number from 1 to 100 ");
+printf("\n 7. Factorial Number ");
+printf("\n 8. Exit ");
+
+printf("\n\n\t  Enter your Choice  ");
+scanf("%d",&a);
+
+switch(a)
+{
+case 1:
+	printf("Enter the Principal, Time & Rate ");
+	scanf("%f %f %f",&g,&h,&i);
+	j=g*h*i/100;
+	printf("\n The Simple Interest After Calculation is %f",j);
+	break;
+case 2:
+	printf("Enter the Radious of Circle ");
+	scanf("%f",&g);
+	h=2*3.14*g;		//2xpixr = Circumference
+	i=3.14*g*g;		//pixrxr = Area
+	printf(" \n The Circumference Value of the Circle is %f",h);
+	printf("\n The Area of the Circle is %f",i);
+	break;
+case 3:
+	printf("\n Enter the Length & Width of the rectangle ");
+	scanf("%d %d",&b,&c);
+	d=b*c;
+	printf("\n The Area of the Rectangle is %d",d);
+	break;
+case 4:
+	printf("\n Enter the Temperature in Ferhenite ");
+	scanf("%f",&g);
+	h=(g-32)*5/9;
+	printf("\n The Temperature in Centigrade is %f",h);
+	break;
+case 5:
+	for(b=1;b<=100;b+=2)
+	{
+	printf("%d \t",b);
+	}
+	break;
+case 6:
+	for(b=0;b<=100;b+=2)
+	{
+	printf("%d \t",b);
+	}
+	break;
+case 7:
+	c=1;
+	printf("Enter a Number ");
+	scanf("%d",&b);
+	for(d=1;d<=b;d++)
+	{
+	c=c*d;
+	}
+	printf("\n The Factorial Value is %d",c);
+	break;
+case 8:
+	printf("\n\n Thank you for Choosing MIIT Software Pvt. Ltd");
+	break;
+default:
+	printf("\n !!!! Wrong Input !!!!");
+	break;
+}
+
+printf("\n\n\t Do you like to Continue ....(y/n)");
+scanf("%s",&ans);
+}
+}
+
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+int x,r;
+printf("Enter a Number ");
+scanf("%d",&x);
+r=sqrt(x);
+printf("The Square root value is %d",r);
+}
+
+
+
+C:\TCWIN45\INCLUDE
+===================================================
+		F  U  N  C  T  I  O  N
+===================================================
+Generally Function are Divided into types. 
+	1. User Defined Function
+	2. Predefined/ Inbuilt Function
+
+A function is a self contained block of statement that perform a coherent task of some kind. every c program can be thought of as a collection of these function. as we noted earlier using a function is something like hiring a person to do a specific job for you. sometimes  the interaction with this person is very simple some time it is complex.
+
+User Defined Function are Four Types
+	1. No Argument No return Value	sum()  y
+	2. No Argument Return Value		x=sum()
+	3. Argument with No Return Value	sum(10,2)
+	4. Argument with Return Value		x=sum(10,2)
+
+Argument is the data inside the function like
+	=sum(12,35,45)
+In the Sum Function there are three Integer argument, The value/function/condition inside the round bracket is argument.
+
+Return Value is a value that returns after calculation of the function. 
+	x=mod(65,9)
+Here x is a variable that will get the modules value after calculation of the two argument 65 and 9. The return value will be 2. In this example "mod" is a function that is returning the value to variable "x".
+
+Example of 	1. No Argument No return Value
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+add();
+add();
+add();
+getch();
+}
+
+
+void add()
+{
+int a,b,c;
+printf("Enter the two number ");
+scanf("%d %d",&a,&b);
+c=a+b;
+printf("\n The value after calculation is %d",c);
+}
+=======================x========================
+joga()
+biyoga()
+gunana()
+harana()
+tapa()
+durata()
+factrl()
+======================/* Function for Temperature =tapa() argument with no return value */
+#include<stdio.h>
+void tapa(int);
+void main()
+{
+tapa(90);
+}
+
+void tapa(int f)
+{
+float c;
+c=(f-32)*5/9;
+printf("\n The Celcious Value is %f",c);
+}
+
+===================/* Function for Addition = joga() argument with no return value/*
+#include<stdio.h>
+void joga(int,int);
+void main()
+{
+joga(20,36);
+}
+
+void joga(int a,int b)
+{
+int c;
+c=a+b;
+printf("\n The Addition Result is %d",c);
+}
+===================/* Function for Subtraction = biyoga() argument with no return value/*
+#include<stdio.h>
+void biyoga(int,int);
+void main()
+{
+biyoga(
+
+========================================== Argument with Return Value
+#include<stdio.h>
+float salary(float);
+void main()
+{
+float x;
+x=salary(500.50);
+printf("The Gross Salary of the Employee is %f",x);
+}
+
+float salary(float bs)
+{
+float ta,da,hra,inc,bon,ot,gs;
+ta=(bs*14)/100;
+da=(bs*18)/100;
+hra=(bs*26)/100;
+inc=(bs*11)/100;
+bon=(bs*9)/100;
+ot=(bs*10)/100;
+gs=bs+ta+da+hra+inc+bon+ot;
+return gs;
+}
+
+While the programmer like to reuse the retur value of function after calculation; we have to use the argument with return value. In this case the function is used just for calculation and return the Answer to which programmer can use once again to the returned value.
+
+//Call By Value Function
+
+#include<stdio.h>
+void swap(int ,int);
+void main()
+{
+int a=10,b=20;
+swap(a,b);
+printf("\n a= %d and b = %d",a,b);
+}
+
+void swap(int x, int y)
+{
+int t;
+t=x;
+x=y;
+y=t;
+printf("\n x = %d and y = %d",x,y);
+}
+
+===============================x=============
+//Call By Reference Function
+
+#include<stdio.h>
+void swap(int *,int *);
+void main()
+{
+int a=10,b=20;
+swap(&a,&b);
+printf("\n a= %d and b = %d",a,b);
+}
+
+void swap(int *x, int *y)
+{
+int t;
+t=*x;
+*x=*y;
+*y=t;
+}
+================= PRE PROCESSOR =======================
+/* Write a program to display the area of a circle */
+#include<stdio.h>
+#define pi 3.14
+main()
+{
+float a,r;
+printf("\n Enter the radious of the circle ");
+scanf("%f",&r);
+a=pi*r*r;
+printf("\n The Area of the Circle is %f",a);
+}
+
+/* 96. Example of  #define AND && */
+#include<stdio.h>
+#define AND &&
+main()
+{
+int a,b,c;
+printf("Enter the value of a,b & c ");
+scanf("%d %d %d",&a,&b,&c);
+if(a>b AND a>c)
+	printf("\n Value of a is greater ");
+else if(b>a AND b>c )
+	printf("\n Value of b is greater");
+else
+	printf("\n Value of c is greater ");
+}
+
+/* Example of OR Preprocessor  . #define OR || */
+#include<stdio.h>
+#define OR ||
+main()
+{
+int a;
+char ms;
+printf("Enter the Age and Martial Status ");
+scanf("%d %c",&a,&ms);
+if(a>18 OR ms=='m')
+	printf("\n You are Insured ");
+else
+	printf("\n  you are not insured");
+}
+
+/* Example of Pre Processor with loop and print*/
+#include<stdio.h>
+#define hline for(i=1;i<=80;i++) printf("=");
+main()
+{
+int i;
+hline;
+}
+
+
+/* 99 Example of Preprocessor with Argument */
+#include<stdio.h>
+#define table(x) for(y=1;y<=10;y++) printf("\n %d * %d= %d",x,y,x*y);
+main()
+{
+	int x,y;
+	table(8);
+}
+
+
+
+/* ------------------- Conditions at PreProcessor Directive --------------------- */
+
+#include<stdio.h>
+#define A (t>=450)
+#define B (t>=350)
+#define C (t>=250)
+
+main()
+{
+int t;
+printf("Enter the Total Mark ");
+scanf("%d",&t);
+
+if(A)
+	printf("\n You got First Class");
+else if (B)
+	printf("\n You Got Second Class");
+else if (C)
+	printf("\n You Got 3rd Division");
+else
+	printf("\n Wow! Congratulation  You Failed in the Examination ");
+}
+
+===================== P O I N T ER  =================
+
+	i = 3
+
+	i	= a variable
+	3	= value of i
+	65524	= location number
+
+#include<stdio.h>
+void main()
+{
+int i = 3;
+printf(" \n Value of i is %d",i);
+printf(" \n Address of i is %u",&i);
+
+
+
+#include<stdio.h>
+void main()
+{
+int i=3;
+int *j;
+j=&i;
+
+printf("\n Address of i = %u",&i);
+printf("\n Address of i = %u",j);
+printf("\n Address of j = %u",&j);
+printf("\n Value of j = %u",j);
+printf("\n Value of i = %u",i);
+printf("\n Value of i = %u",*(&i));
+printf("\n Value of i = %u",*j);
+}
+
+stdio.h
+
+============================
+Standard Library String Function
+============================
+
+Function		Use
+strlen	Finds Length of a string
+strlwr	Converts a string to lowercase
+strupr	Converts a string to uppercase
+strcat	Appends one string at the end of another
+strncat	Appends first n characters of a string at the end of another
+
+strcpy	copies a string into another
+strncpy	Copies first n characters of one string into another
+strcmp	Compares two string
+strncmp	Compares first n characters of two strings
+strcmpi	compares two strings without regard to case (i denotes that it ignore case)
+
+stricmp 	Compares two strings without regard to case (identical to strcmpi)
+strdup	Duplicates a string
+strchr	Finds first occurance of a given character in a string
+strrchr	Finds last occurance of a given character in a string.
+strstr	Finds first occurance of a given string in another string
+strset	sets all characters of string to a given character
+strnset	Sets first n character of a string to a given character
+strrev	Reverses string
+
+
+strlen() :This function counts the number of character persent in a string. 
+
+strcpy() : This function copies the contents of one string into another. The base address of the source and target string should be supplied to this function. 
+
+strcat () : This Function concatenates the source string at the end of the target string. For Example "Bombay" and "Nagpur" on concatenation would result into a string "BombayNagpur". 
+
+strcmp() : This is a function which compares two strings to find out whether they are same or different. The two strings are compared character by character until  there is a mismatch or end of one of the string is reached, whichever occurs first. If both are identical then strcmp() returns a zero value.  If they are not it returns the numeric difference between the ASCII values of the first non matching pair of character. 
+
+
+/* Example of strlen function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[20]="Naresh";
+	int x;
+	x=strlen(a);
+	printf("\n Length is %d",x);
+}
+
+
+/* Example of strcpy function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[20]="Naresh",b[20]="Narein";
+	strcpy(a,b);
+	printf("\n Value of a is %s",a);
+	printf("\n Value of b is %s",b);
+}
+
+/* Example of strcat function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[20]="Naresh",b[20]="Narein";
+	strcat(a,b);
+	printf("\n Value of a is %s",a);
+	printf("\n Value of b is %s",b);
+}
+
+/* Example of strcmp function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[20]="Naresh",b[20]="Naresh";
+	int x;
+	x=strcmp(a,b);
+	printf("\n Difference Value is %d",x);
+}
+
+/* Example of strupr function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[30]="MIIT Computer Education";
+	printf("\n Upper Case Value is %s",strupr(a));
+}
+
+/* Example of strlwr function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[30]="MIIT Computer Education";
+	printf("\n Lower Case Value is %s",strlwr(a));
+}
+
+/* Example of strrev function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[30]="MIIT Computer Education";
+	printf("\n Reverse Value is %s",strrev(a));
+}
+
+======================================
+/* strlen function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	int x;
+	char a[20]="NareshKumar";
+	x=strlen(a);
+	printf("\n The Length is %d",x);
+}
+========================================
+
+/* strcpy function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[20]="Naresh",b[20]="Narein";
+	strcpy(a,b);
+	printf("\n The a Value is %s",a);
+	printf("\n The b Value is %s",b);
+}
+
+==========================================
+/* strcat function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char a[20]="Naresh",b[20]="Narein";
+	strcat(a,b);
+	printf("\n The a Value is %s",a);
+	printf("\n The b Value is %s",b);
+}
+
+===========================================
+
+/* strcmp function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	int x;
+	char a[20]="Naresh",b[20]="Narein";
+	x=strcmp(a,b);
+	printf("\n The difference Value is %d",x);
+}
+
+
+/* strupr function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	int x;
+	char a[20]="MIIT Computer";
+	printf("\n The Upper Value is %s",strupr(a));
+}
+
+/* strlwr function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	int x;
+	char a[20]="MIIT Computer";
+	printf("\n The Upper Value is %s",strlwr(a));
+}
+
+/* strrev function */
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	int x;
+	char a[20]="MIIT Computer";
+	printf("\n The Upper Value is %s",strrev(a));
+}
+
+
+===================  A   R   R   A   Y  ============================
+One Dimentional Array 		int a[6];
+	6	7	21	65	48	35	
+						21=a[2];
+Two Dimentional Array		int a[5][4]
+	54	32	65	98	85
+	32	65	54	87	25
+	15	26	29	28	27
+	35	36	39	37	32
+						15=a[0][2]
+Multi Dimentional Array		int a[5][4][2]
+	54	32	65	98	85
+	32	65	54	87	25
+	15	26	29	28	27
+	35	36	39	37	32
+
+	54	32	65	98	85
+	32	65	54	87	25
+	15	26	55	28	27
+	35	36	39	37	33	55=a[2][2][1]
+
+Array : An array is a collective name given to a group of "similar quantities".
+
+//Accept the Marks of 30 Students and Display it.
+
+#include<stdio.h>
+void main()
+{
+int m[30],i;
+for(i=0;i<=29;i++)
+{
+printf("Enter the Mark of student ");
+scanf("%d",&m[i]);
+}
+printf("\n\nThe Marks are as follows \n\n");
+for(i=0;i<=29;i++)
+{
+printf("%d \t",m[i]);
+}
+}
+
+//Accept the Marks of 30 Students and Display marks & Total Mark.
+
+#include<stdio.h>
+void main()
+{
+int m[30],i,t=0;
+for(i=0;i<=29;i++)
+{
+printf("Enter the Mark of student ");
+scanf("%d",&m[i]);
+}
+printf("\n\nThe Marks are as follows \n\n");
+for(i=0;i<=29;i++)
+{
+printf("%d \t",m[i]);
+t=t+m[i];
+}
+printf("\n The Total Mark is %d",t);
+}
+============ TWO DIMENTIONAL ARRAY =================
+
+#include<stdio.h>
+void main()
+{
+int x[3][4],i,j;
+for(i=0;i<=2;i++)
+{
+for(j=0;j<=3;j++)
+{
+printf("Enter the Number ");
+scanf("%d",&x[i][j]);
+}}
+
+printf("\n\n You have Entered \n\n");
+
+for(i=0;i<=2;i++)
+{
+for(j=0;j<=3;j++)
+{
+printf("%d\t",x[i][j]);
+}
+printf("\n");
+}
+
+}
+
+
+=====================multi dimentional===================
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int x[5][2], y[5][2], z[5][2],i,j;
+clrscr();
+
+for(i=0;i<=4;i++)
+{
+for(j=0;j<=1;j++)
+{
+printf("Enter the Number ");
+scanf("%d",&x[i][j]);
+}}
+
+for(i=0;i<=4;i++)
+{
+for(j=0;j<=1;j++)
+{
+printf("Enter the Number ");
+scanf("%d",&y[i][j]);
+}}
+
+
+
+printf("\n The 1st Table of X \n\n");
+
+for(i=0;i<=4;i++)
+{
+for(j=0;j<=1;j++)
+{
+printf("%d \t",x[i][j]);
+}
+printf("\n");
+}
+
+printf("\n The 2nd Table of y \n\n");
+
+for(i=0;i<=4;i++)
+{
+for(j=0;j<=1;j++)
+{
+printf("%d \t",y[i][j]);
+}
+printf("\n");
+}
+
+for(i=0;i<=4;i++)
+{
+for(j=0;j<=1;j++)
+{
+z[i][j]=x[i][j]+y[i][j];
+}
+printf("\n");
+}
+
+printf("\n The 3rd Table of Z is Answer  \n\n");
+
+for(i=0;i<=4;i++)
+{
+for(j=0;j<=1;j++)
+{
+printf("%d \t",z[i][j]);
+}
+printf("\n");
+}
+
+getch();
+}
+
+The 1st Table of X
+	25	26
+	24	27
+	28	65
+	48	39
+	18	29
+The 2nd Table of Y
+	5	6
+	4	3
+	2	3	
+	1	8
+	9	4
+The Answer Table of Z
+	30	32
+	28	30
+	30	68
+	49	47
+	27	33
+
+c
+============================ STRING FUNCTION ==========================
+
+strlen()
+strcpy()
+strcat()
+strcmp()
+
+============================== /* Strlen()
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char y[]="Surendra Sahu";
+int x;
+x=strlen(y);
+printf("\n The Length of the String is %d",x);
+}
+
+============================== /* Strcpy()
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+char y[]="Surendra Sahu",x[]="Suchismita Sahu";
+```strcpy(y,x);
+printf("\n The value of x String is %s",x);
+printf("\n The value of y String is %s",y);
+}
+
+====================== STRUCTURE ===========================
+
+int i=3;		3
+
+int x[5];		5	4	8	9	5
+
+int x[2][3]		2	5	6
+		4	8	9
+
+int x[2][3][4]	3	2	5	4
+		4	5	8	6
+		1	5	7	8
+
+		3	2	5	4
+		4	5	8	6
+		1	5	7	8
+struct book b1
+		Book Name = Java
+		Nos of Page = 175
+		Amount = 97.65
+		
+Suppose you want to store data about a book. You might want to store its name (a string), Its Price (a float) and number of Pages in it (an Int). If data about say 3 such books is to be store then we can follow two approaches.
+
+1) Construct Individual array, one for storing names, another for storing price and another for storing number of pages.
+
+2) Use a struct Variable
+
+
+In this approach, no doubt, allows you to store names, prices and number of pages . But as you must have reliazed, Its is unwidely approach that obsecures the fact that you are dealing with a group of characteristics related to a single entity- this book.
+
+(A Structure contains a number of data types grouped together. These data types may or may not be of the same type.)
+
+============== A SAMPLE EXAMPLE OF STRUCTURE ================
+
+#include<stdio.h>
+void main()
+{
+struct book
+{
+	int page;
+	char name[20];
+	float price;
+};
+struct book b1;
+printf("Enter the Book Name, Nos of Pages and Price ");
+scanf("%s %d %f",&b1.name,&b1.page,&b1.price);
+
+printf("\n You choosen %s Books, having %d pages and %f Amount",b1.name,b1.page, b1.price);
+}
+
+Q1. Accept the Data of a Student and Display it using Structure.
+	RollNo
+	Name
+	Course
+	Fees
+Q2. Accept the Data of a Customer in a Bank and Display it using Structure.
+	Account Number	
+	Name
+	Nominee Name
+	Current Balance
+Q3 : Accept the Data of a Vehiche and 
+	Vehicle Name
+	RTO Number
+	Vehicle Amount	
+Display it using Structure
+	Vehicle Name
+	RTO Number
+	Vehicle Amount	
+	Road Tax Amount (10% of Vechile Amount)
+	Insurance Amount (15%)
+
+// Automobile project
+#include<stdio.h>
+void main()
+{
+struct autom
+{
+	char vname[20],rto[10];
+	float vamt,rta,inc;
+};
+
+struct autom x;
+printf("Enter the Vechile Name, RTO Number & Amount ");
+scanf("%s %s %f",&x.vname,&x.rto, &x.vamt);
+
+x.rta=(x.vamt*10)/100;
+x.inc=(x.vamt*15)/100;
+
+printf("You have choosen %s Vechile, having RTO Number %s and Costs %f, Road Tax %f and Insurance %f",x.vname,x.rto,x.vamt,x.rta,x.inc);
+
+}
+
+================== STRUCTURE WITH ARRAY ===================
+
+/* Structure with Array */
+#include<stdio.h>
+void main()
+{
+struct student
+{
+	int roll;
+	char name[20];
+	float fees;
+};
+
+struct student s[5];
+int x;
+for(x=0;x<=4;x++)
+{
+printf("Enter the Roll, Name and Fees ");
+scanf("%d %s %f",&s[x].roll,&s[x].name,&s[x].fees);
+}
+
+printf("Roll\tName\tFees");
+for(x=0;x<=4;x++)
+{
+printf("\n%d\t%s\t%f",s[x].roll,s[x].name,s[x].fees);
+}
+
+}
+
+
+======================== CALCULATION WITH STRUCTURE =====================
+
+/* Structure with Array */
+#include<stdio.h>
+void main()
+{
+struct student
+{
+	int roll;
+	char name[20];
+	floaktt fees;
+};
+
+struct student s[5];
+int x,sum=0;
+for(x=0;x<=4;x++)
+{
+printf("Enter the Roll, Name and Fees ");
+scanf("%d %s %f",&s[x].roll,&s[x].name,&s[x].fees);
+}
+
+printf("Roll\tName\tFees");
+for(x=0;x<=4;x++)
+{
+printf("\n%d\t%s\t%f",s[x].roll,s[x].name,s[x].fees);
+sum=sum+s[x].fees;
+}
+printf("\n The Total Fees Balance from Student is %d",sum);
+}
+===========================================================

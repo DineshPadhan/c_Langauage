@@ -1,0 +1,386 @@
+================== CALL BY VALUE=======================
+#include<iostream>
+using namespace std;
+void swap(int ,int) ;
+main()
+{
+	int a=10, b=20;
+	swap(a,b);
+	cout<<"value of a is "<<a<<endl;
+	cout<<"value of b is "<<b<<endl;
+}
+
+void swap(int x, int y)
+{
+int t;
+t=x;
+x=y;
+y=t;
+	cout<<"value of x is "<<x<<endl;
+	cout<<"value of y is "<<y<<endl;
+}
+
+================== CALL BY REFERENCE =======================
+#include<iostream>
+using namespace std;
+void swap(int *,int *);
+main()
+{
+	int a=10, b=20;
+	swap(&a,&b);
+	cout<<"value of a is "<<a<<endl;
+	cout<<"value of b is "<<b<<endl;
+}
+
+void swap(int *x, int *y)
+{
+int t;
+t=*x;
+*x=*y;
+*y=t;
+}
+
+Data Storage Types : Data storage types determine how storage is allocated to the variable. The Storage types supported by C++ are
+
+- auto
+- static
+- extern
+
+Auto Storage type : Data pertaining to a function is lost when the function has been executed completely. Variables defined in a function are in memory and retain their value only as long as the function is in execution. 
+
+Static Storage type : As opposed to auto type data, C++ also offers static type data, which as its name suggests retains its value even after the function to which it belongs has been executed. 
+
+Extern Storage type : Apart from auto and static types, a variable can also be declared in a manner such that it is available to all functions in a program file, that is it is a global variable. A variable declared outside a funciton is called a global variable. 
+
+#include<iostream>
+using namespace std;
+void test();
+main()
+{
+test();
+test();
+test();
+}
+
+void test()
+{
+int i;
+cout<<"\n Function Executed "<<i;
+i++;
+}
+==============================x===================
+OBJECT ORIENTED PROGRAMMING AN INTRODUCTION
+===================================================
+
+
+Special Features of C++ Programming
+
+Inherietance = Inherietance is the process of creating a new class, called the derived class from the existing class, called the base class.
+
+For Example : Motercycle, Cars and trucks have certain common properties- all have wheels, engine, horns etc.. Thus they can be grouped under a class called automobiles. Apart from sharing these comon features, each subclass has its own particluar characterics- cars use petrol while trucks use diesels.
+
+The derived class has its own characteristic and in addition, it also inherits the properties of the base class.
+
+
+Reusablility = The concept of Inherietance provides an important features to the object oriented language- reusability. A programmer can take an existing class and without modifying it. can add addtional features and capabilities to it. This is done by deriving a new class form an existing class.
+
+Polymorphism = The word polymorphism is derived from two Latin word poly (many) and morphos (forms). The concept of using opoerators or function in different ways depending on what they are operating on . is called polymorphism. 
+
+
+
+Class & Structure a similiar.
+In Class 		Member data and Member function 	are Private By default
+In Structure 	Member data and Member function 	are Public By default
+Private Data Can not be accessed from outside
+Public Data Can be accessed from outside
+Member Function = Function and Member Data = Variable
+
+#include<iostream>
+using namespace std;
+class add
+{
+	private:
+		int num1,num2,num3;
+	public:
+		void input(int a,int b)
+		{
+		cout<<"\n Function to assign values to member data";
+		num1=a;
+		num2=b;
+		}
+
+		void sum()
+		{
+		cout<<"\n Function to findout the sum of two number ";
+		num3=num1+num2;
+		}
+
+		void disp()
+		{
+		cout<<"\n The sum of two number is "<<num3;
+		}
+};
+
+main()
+{
+add x;
+x.input(25,30);
+x.sum();
+x.disp();
+}
+
+
+Scope Resolution Operator  An Example
+======================   =========
+
+#include<iostream>
+using namespace std;
+class add
+{
+	private:
+		int num1,num2,num3;
+	public:
+		void input(int,int);
+		void sum();
+		void disp();
+};
+		void add::input(int a,int b)
+		{
+		cout<<"\n Function to assign values to member data";
+		num1=a;
+		num2=b;
+		}
+
+		void add::sum()
+		{
+		cout<<"\n Function to findout the sum of two number ";
+		num3=num1+num2;
+		}
+
+		void add::disp()
+		{
+		cout<<"\n The sum of two number is "<<num3;
+		}
+
+main()
+{
+add x;
+x.input(25,30);
+x.sum();
+x.disp();
+}
+
+
+=================== INHERIETANCE An Example ==========================
+
+#include<iostream>
+using namespace std;
+class furniture
+{
+	protected:
+		int color, width, height;
+};
+
+class bookshelf:public furniture
+{
+	private:
+		int no_shelf;
+	public:
+		void accept()
+		{
+		cout<<"Enter the Bookshelf Color ";
+		cin>>color;
+		cout<<"Enter the Bookshelf Width ";
+		cin>>width;
+		cout<<"Enter the Bookshelf Height ";
+		cin>>height;
+		cout<<"Enter the Number of Shelves ";
+		cin>>no_shelf;
+		}
+
+		void display()
+		{
+		cout<<"\n Bookshelf Color is "<<color;
+		cout<<"\n Bookshelf Width is "<<width;
+		cout<<"\n Bookshelf Height is "<<height;
+		cout<<"\n Number of Shelves are "<<no_shelf;
+		}
+};
+
+class chair:public furniture
+{
+	private:
+		int no_legs;
+	public:
+		void accept()
+		{
+		cout<<"Enter the Chair Color ";
+		cin>>color;
+		cout<<"Enter the Chair Width ";
+		cin>>width;
+		cout<<"Enter the Chair Height ";
+		cin>>height;
+		cout<<"Enter the Number of Legs for Chair ";
+		cin>>no_legs;
+		}
+
+		void display()
+		{
+		cout<<"\n Chair Color is "<<color;
+		cout<<"\n Chair Width is "<<width;
+		cout<<"\n Chair Height is "<<height;
+		cout<<"\n Number of Legs are "<<no_legs;
+		}
+};
+
+main()
+{
+bookshelf x;
+chair y;
+x.accept();
+x.display();
+y.accept();
+y.display();
+}
+
+=================== CONSTRUCTOR / DESTRUCTOR =====================
+Need of Constructor : Every object created would have a copy of member data which requires initalization before it can be used. In the example discussed in the SPL, the object A1 of the class add had to call a member function called input() to initialize the mamber data Num1 and Num2. In this case, there is no possibility of member data getting initalized autometically whenever an object is created. Since this requirement is so common. C++ allows objects to initialize themselves as and when they are created. This automatic initialization is performed through the use of the constructor functions. 
+
+Declaration of Constructor 
+
+A constructor function is a special function that is a member of the class and has the same name as that of the class. For example here is how the add class looks when converted to use a constructor function for initialization. 
+
+#include<iostream>
+using namespace std;
+class add
+{
+	private:
+		int num1,num2,num3;
+	public:
+		add()
+		{
+			cout<<" Enter two number ";
+			cin>>num1>>num2;
+		}
+
+		void sum()
+		{
+		cout<<"\n Function to findout the sum of two number ";
+		num3=num1+num2;
+		}
+
+		void disp()
+		{
+		cout<<"\n The sum of two number is "<<num3;
+		}
+};
+
+main()
+{
+add x;
+x.sum();
+x.disp();
+}
+===========Destructor============
+
+Need for Destructors : Destructor are function that are complimentary to constructors. They de-initialize objects when they are destroyed. A destructor in invoked when an object of the class goes out of scope or  when the memory occupied by it is deallocated using the delete operator.
+
+Declaration of Destructor
+
+A destructor is a function that has the same name as that of the class but is prefized with a  tilde (~) symbol. Overloading a destructor is not possible and can be explicitely invoked. In other words a class can have only one destructor. A destructor can not take argument or specify a return value, or explicitely return  a value.
+
+==================== EXAMPLE OF CONSTRUCTOR AND DESTRUCTOR ===========
+#include<iostream>
+using namespace std;
+class A
+{
+	public:
+	A()
+	{
+	cout<<" Constructor A invoked \n";
+	}
+
+	~A()
+	{
+	cout<<" Destructor A invoked \n";
+	}
+};
+
+class B
+{
+	public:
+	B()
+	{
+	cout<<" Constructor B invoked \n";
+	}
+
+	~B()
+	{
+	cout<<" Destructor B invoked \n";
+	}
+};
+
+class C:virtual public A
+{
+	public:
+	C()
+	{
+	cout<<" Constructor C invoked \n";
+	}
+
+	~C()
+	{
+	cout<<" Destructor C invoked \n";
+	}
+};
+
+class D:virtual public A
+{
+	public:
+	D()
+	{
+	cout<<" Constructor D invoked \n";
+	}
+
+	~D()
+	{
+	cout<<" Destructor D invoked \n";
+	}
+};
+
+class E
+{
+	public:
+	E()
+	{
+	cout<<" Constructor E invoked \n";
+	}
+
+	~E()
+	{
+	cout<<" Destructor E invoked \n";
+	}
+};
+
+class F:public B, public C, public D
+{
+	private:
+		E E;
+	public:
+	F()
+	{
+	cout<<" Constructor F invoked \n";
+	}
+
+	~F()
+	{
+	cout<<" Destructor F invoked \n";
+	}
+};
+
+main()
+{
+F x;
+cout<<"Program Over \n";
+}
+

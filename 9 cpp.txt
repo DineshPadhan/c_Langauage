@@ -1,0 +1,767 @@
+One Way Statement
+Conditional Selection
+	If
+	If Else
+	Nested If
+Loop
+	While
+	Do........ While
+	For
+Switch Case Statement
+Function
+	No Argument No Return Value
+	No Argument Return Value
+	Argument with No Return Value
+	Argument with Return Value
+	Call by Value
+	Call by Reference
+PreProcessor
+Array
+	One Dimensional Array
+	One Dimensional Array Calculation
+	Two Dimensional Array
+	Two Dimensional Array Calculation
+	MultiDimensional Array
+String & Predefined Function
+	Strlen
+	Strcpy
+	Strcat
+	Strcmp
+	etc...
+Structure
+	Simple Structure
+	Structure with Array
+
+
+
+/*Program for simple intrest*/
+#include<iostream.h>
+void main()
+{
+int p,t,r,i;
+cout<<"enter p,t,r";
+cin>>p>>t>>r;
+i=(p*t*r)/100;
+cout<<"simple intrest result is"<<i;
+}
+
+ /*Program for Circumference and area of Circle*/
+ #include<iostream.h>
+ void main()
+ {
+ int r,ac,c;
+ cout<<"Enter the radious of Circle ";
+ cin>>r;
+ ac=2*3.14*r;
+ c=3.14*r*r;
+ cout<<"\n The area of Circle is"<<ac;
+ cout<<"\n The Circumference of Circle is"<<c;
+ }
+
+/*Input ferhanite;calculate centigrate*/
+#include<iostream.h>
+void main()
+{
+float f,c ;
+cout<<"enter temperature in ferhanite";
+cin>>f;
+c=(f-32)*5/9;
+cout<<"the temprature in centigrate is"<<c;
+}
+
+/*input distance in km;convert to mtr,ft,in and cm*/
+#include<iostream.h>
+void main()
+{
+float km,mtr,ft,in,cm;
+cout<<"enter distance in kilometer";
+cin>>km;
+mtr=km*1000;
+cm=mtr*100;
+ft=mtr*3.28;
+in=ft*12;
+cout<<"\n The distance in Kilometer is"<<km;
+cout<<"\n The distance in Meter is"<<mtr;
+cout<<"\n The distance in Feet is"<<ft;
+cout<<"\n The distance in Inch is"<<in;
+cout<<"\n The distance in Centimeter is"<<cm;
+}
+
+ /*program for area*/
+ #include<iostream.h>
+ void main()
+ {
+ int l,w,ar;
+ cout<<"Enter the Length and Width of the Rectangle ";
+ cin>>l>>w;
+ ar=l*w;
+ cout<<"The Area of rectangle is"<<ar;
+ }
+================= IF =============
+/* Check Voter or Not */
+#include<iostream.h>
+void main()
+{
+int age;
+cout<<"Enter your age ";
+cin>>age;
+if(age>18)
+	cout<<"\n You are a Voter";
+else
+	cout<<"\n You are not a Voter";
+}
+
+/* Mark and Division */
+#include<iostream.h>
+void main()
+{
+int m1,m2,m3,m4,m5,tot,av;
+cout<<"Enter the Mark of 5 Subject ";
+cin>>m1>>m2>>m3>>m4>>m5;
+t=m1+m2+m3+m4+m5;
+av=t/5;
+cout<<"\n Total Mark is <<t;
+cout<<"\n Average Mark is <<av;
+if(av>=60)
+	cout<<"\n You got 1st Class";
+else if (av>=45)
+	cout<<"\n You got 2nd Class";
+else if(av>=30)
+	cout<<"\n You are 3rd Class";
+else
+	cout<<"Congratulation ! You are Failed ";
+}
+/* ============================= WHILE LOOP  ==============
+
+/*Display 1 to 10 Natural Number */
+#include<iostream.h>
+void main()
+{
+int x=1;
+while(x<=10)
+{
+cout<<"\n"<<x;
+x++;
+}
+}
+
+/* ============================= DO.......... WHILE LOOP  ==============
+/*Display 1 to 10 Natural Number */
+#include<iostream.h>
+void main()
+{
+int x=1;
+do
+{
+cout<<"\n"<<x;
+x++;
+}while(x<=10);
+}
+
+/* ============================= FOR LOOP  ==============
+/*Display 1 to 10 Natural Number */
+#include<iostream.h>
+void main()
+{
+int x;
+for(x=1;x<=10;x++)
+{
+cout<<"\n"<<x;
+}
+}
+================= SWITCH CASE ================
+/* Accept the Day Serial and Display the Day Name using Switch Case Statement */
+#include<iostream.h>
+void main()
+{
+int x;
+cout<<"Enter the Day Serial Number ";
+cin>>x;
+
+switch(x)
+{
+case 1:
+	cout<<"Today is Sunday";
+	break;
+case 2:
+	cout<<"Today is Monday";
+	break;
+case 3:
+	cout<<"Today is Tuesday";
+	break;
+case 4:
+	cout<<"Today is Wednesday";
+	break;
+case 5:
+	cout<<"Today is Thursday";
+	break;
+case 6:
+	cout<<"Today is Friday";
+	break;
+case 7:
+	cout<<"Today is Saturday";
+	break;
+default:
+	cout<<"Wrong Input";
+}
+}
+
+
+=========== FUNCTION (NO ARGUMENT NO RETURN VALUE =========
+/*Creating Own Header File ===========*/
+
+- Step1 = Write these Codes
+
+void aoc()
+{
+int r,a;
+cout<<"Enter the Radious ";
+cin>>r;
+a=2*3.14*r;
+cout<<"\n The Area of Circle is "<<a;
+}
+
+void aor()
+{
+int l,w,a;
+cout<<"Enter the Length & Width ";
+cin>>l>>w;
+a=l*w;
+cout<<"\n The Area of Rectangle is "<<a;
+}
+
+- Step2 = Save the file "d:\TCWIN45\INCLUDE\saroj.h"
+- Step3 = Create New CPP File & Write these Codes
+
+#include<iostream.h>
+#include<saroj.h>
+void main();
+{
+aoc();
+}
+
+
+============================
+Standard Library String Function
+============================
+
+Function		Use
+strlen	Finds Length of a string
+strlwr	Converts a string to lowercase
+strupr	Converts a string to uppercase
+strcat	Appends one string at the end of another
+strncat	Appends first n characters of a string at the end of another
+
+strcpy	copies a string into another
+strncpy	Copies first n characters of one string into another
+strcmp	Compares two string
+strncmp	Compares first n characters of two strings
+strcmpi	compares two strings without regard to case (i denotes that it ignore case)
+
+stricmp 	Compares two strings without regard to case (identical to strcmpi)
+strdup	Duplicates a string
+strchr	Finds first occurance of a given character in a string
+strrchr	Finds last occurance of a given character in a string.
+strstr	Finds first occurance of a given string in another string
+strset	sets all characters of string to a given character
+strnset	Sets first n character of a string to a given character
+strrev	Reverses string
+
+
+strlen() :This function counts the number of character persent in a string. 
+
+strcpy() : This function copies the contents of one string into another. The base address of the source and target string should be supplied to this function. 
+
+strcat () : This Function concatenates the source string at the end of the target string. For Example "Bombay" and "Nagpur" on concatenation would result into a string "BombayNagpur". 
+
+strcmp() : This is a function which compares two strings to find out whether they are same or different. The two strings are compared character by character until  there is a mismatch or end of one of the string is reached, whichever occurs first. If both are identical then strcmp() returns a zero value.  If they are not it returns the numeric difference between the ASCII values of the first non matching pair of character. 
+
+#include<iostream.h>
+#include<string.h>
+void main()
+{
+int x;
+char st[]="saroj kumar majhi";
+x=strlen(st);
+cout<<"\n The Length of the String is "<<x;
+}
+
+============================
+#include<iostream.h>
+#include<string.h>
+void main()
+{
+int x;
+char a[]="saroj",b[]="majhi";
+strcpy(a,b);
+cout<<"\n The value of a is "<<a;
+cout<<"\n The value of b is "<<b;
+}
+============================
+#include<iostream.h>
+#include<string.h>
+void main()
+{
+int x;
+char a[20]="saroj",b[20]="majhi";
+strcat(b,a);
+cout<<"\n The value of a is "<<a;
+cout<<"\n The value of b is "<<b;
+}
+============================
+#include<iostream.h>
+#include<string.h>
+void main()
+{
+int x;
+char a[20]="sarat",b[20]="saroj";
+x=strcmp(b,a);
+cout<<"\n The difference value of a and b is "<<x;
+}
+
+
+============== ARRAY =====================
+#include<iostream.h>
+void main()
+{
+int m[5],i;
+for(i=0;i<=4;i++)
+{
+cout<<"Enter the Mark of student ";
+cin>>m[i];
+}
+cout<<"\n\nThe Marks are as follows \n\n";
+for(i=0;i<=4;i++)
+{
+cout<<"\t"<<m[i];
+}
+}
+
+
+/* Two Dimensional Array */
+#include<iostream.h>
+void main()
+{
+int x[3][4],i,j;
+for(i=0;i<=2;i++)
+{
+for(j=0;j<=3;j++)
+{
+cout<<"Enter the Number ";
+cin>>x[i][j];
+}}
+
+cout<<"\n\n You have Entered \n\n";
+
+for(i=0;i<=2;i++)
+{
+for(j=0;j<=3;j++)
+{
+cout<<"\t"<<x[i][j];
+}
+cout<<"\n";
+}
+
+}
+
+/* Accept the data into Multidimensional Dimentional Array and Display It. i.e.
+	2 Pages; 3 Row and 4 Column */
+#include<iostream.h>
+void main()
+{
+int x[2][3][4],i,j,k;
+for(k=0;k<=1;k++)
+{
+for(i=0;i<=2;i++)
+{
+for(j=0;j<=3;j++)
+{
+cout<<"Enter the Number ";
+cin>>x[k][i][j];
+}}}
+
+for(k=0;k<=1;k++)
+{
+for(i=0;i<=2;i++)
+{
+for(j=0;j<=3;j++)
+{
+cout<<"\t"<<x[k][i][j];
+}
+cout<<"\n";
+}
+cout<<"\n\n";
+}
+
+}
+
+==================== STRUCTURE
+#include<iostream.h>
+void main()
+{
+struct book
+{
+	int page;
+	char name[20];
+	float price;
+};
+struct book b1;
+cout<<"Enter the Book Name, Nos of Pages and Price ";
+cin>>b1.name>>b1.page>>b1.price;
+cout<<"You have Choosen "<<b1.name<<" Book having "<<b1.page<<" Pages and Costs Rs. "<<b1.price;
+}
+
+
+================== CALL BY VALUE=======================
+#include<iostream.h>
+void swap(int ,int) ;		// Prototype declaration
+void main()
+{
+	int a=10, b=20;
+	swap(a,b);
+	cout<<"value of a is "<<a<<endl;
+	cout<<"value of b is "<<b<<endl;
+}
+
+void swap(int x, int y)
+{
+int t;
+t=x;
+x=y;
+y=t;
+	cout<<"\n value of x is "<<x;
+	cout<<"\n value of y is "<<y;
+}
+
+================== CALL BY REFERENCE =======================
+#include<iostream.h>
+void swap(int *,int *);
+void main()
+{
+	int a=10, b=20;
+	swap(&a,&b);
+	cout<<"value of a is "<<a<<endl;
+	cout<<"value of b is "<<b<<endl;
+}
+
+void swap(int *x, int *y)
+{
+int t;
+t=*x;
+*x=*y;
+*y=t;
+	cout<<"value of x is "<<x<<endl;
+	cout<<"value of y is "<<y<<endl;
+}
+
+OBJECT ORIENTED PROGRAMMING AN INTRODUCTION
+
+
+Data Storage Types : Data storage types determine how storage is allocated to the variable. The Storage types supported by C++ are
+
+- auto
+- static
+- extern
+
+Auto Storage type : Data pertaining to a function is lost when the function has been executed completely. Variables defined in a function are in memory and retain their value only as long as the function is in execution. 
+
+Static Storage type : As opposed to auto type data, C++ also offers static type data, which as its name suggests retains its value even after the function to which it belongs has been executed. 
+
+Extern Storage type : Apart from auto and static types, a variable can also be declared in a manner such that it is available to all functions in a program file, that is it is a global variable. A variable declared outside a funciton is called a global variable. 
+
+#include<iostream.h>
+#include<conio.h>
+void test();
+void main()
+{
+test();
+test();
+test();
+}
+
+void test()
+{
+static int i;
+cout<<"\n Function Executed "<<i;
+i++;
+}
+==============================x===================
+#include<iostream.h>
+class add
+{
+	private:
+		int num1,num2,num3;
+	public:
+		void input(int a,int b)
+		{
+		cout<<"\n Function to assign values to member data";
+		num1=a;
+		num2=b;
+		}
+
+		void sum()
+		{
+		cout<<"\n Function to findout the sum of two number ";
+		num3=num1+num2;
+		}
+
+		void disp()
+		{
+		cout<<"\n The sum of two number is "<<num3;
+		}
+};
+
+void main()
+{
+add a1;
+a1.input(25,30);
+a1.sum();
+a1.disp();
+}
+
+===================================================
+
+
+Special Features of C++ Programming
+
+Inherietance = Inherietance is the process of creating a new class, called the derived class from the existing class, called the base class.
+
+For Example : Motercycle, Cars and trucks have certain common properties- all have wheels, engine, horns etc.. Thus they can be grouped under a class called automobiles. Apart from sharing these comon features, each subclass has its own particluar characterics- cars use petrol while trucks use diesels.
+
+The derived class has its own characteristic and in addition, it also inherits the properties of the base class.
+
+
+Reusablility = The concept of Inherietance provides an important features to the object oriented language- reusability. A programmer can take an existing class and without modifying it. can add addtional features and capabilities to it. This is done by deriving a new class form an existing class.
+
+Polymorphism = The word polymorphism is derived from two Latin word poly (many) and morphos (forms). The concept of using opoerators or function in different ways depending on what they are operating on . is called polymorphism. 
+
+Scope Resolution Operator  An Example
+======================   =========
+
+#include<iostream.h>
+#include<conio.h>
+class add
+{
+	private:
+		int num1, num2, num3;
+	public:
+		void input(int,int);
+		void sum();
+		void disp();
+};
+
+void add::input(int v1, int v2)
+{
+num1=v1;
+num2=v2;
+}
+
+void add::sum()
+{
+num3=num1+num2;
+}
+
+void add::disp()
+{
+cout<<"\n The summation the numbers are "<<num3;
+}
+
+void main()
+{
+add a1;
+a1.input(25,30);
+a1.sum();
+a1.disp();
+}
+
+=================== INHERIETANCE An Example ==========================
+
+#include<iostream.h>
+class furniture
+{
+	protected:
+		int color, width, height;
+};
+
+class bookshelf:public furniture
+{
+	private:
+		int no_shelf;
+	public:
+		void accept()
+		{
+		cout<<"Enter the Color ";
+		cin>>color;
+		cout<<"Enter the Width ";
+		cin>>width;
+		cout<<"Enter the Height ";
+		cin>>height;
+		cout<<"Enter the Number of Shelves ";
+		cin>>no_shelf;
+		}
+
+		void display()
+		{
+		cout<<"\n Color is "<<color;
+		cout<<"\n Width is "<<width;
+		cout<<"\n Height is "<<height;
+		cout<<"\n Number of Shelves are "<<no_shelf;
+		}
+};
+
+class chair:public furniture
+{
+	private:
+		int no_legs;
+	public:
+		void accept()
+		{
+		cout<<"Enter the Color ";
+		cin>>color;
+		cout<<"Enter the Width ";
+		cin>>width;
+		cout<<"Enter the Height ";
+		cin>>height;
+		cout<<"Enter the Number of Legs for Chair ";
+		cin>>no_legs;
+		}
+
+		void display()
+		{
+		cout<<"\n Color is "<<color;
+		cout<<"\n Width is "<<width;
+		cout<<"\n Height is "<<height;
+		cout<<"\n Number of Legs are "<<no_legs;
+		}
+};
+
+void main()
+{
+bookshelf b1;
+chair c1;
+b1.accept();
+b1.display();
+c1.accept();
+c1.display();
+}
+=================== CONSTRUCTOR / DESTRUCTOR =====================
+Need of Constructor : Every object created would have a copy of member data which requires initalization before it can be used. In the example discussed in the SPL, the object A1 of the class add had to call a member function called input() to initialize the mamber data Num1 and Num2. In this case, there is no possibility of member data getting initalized autometically whenever an object is created. Since this requirement is so common. C++ allows objects to initialize themselves as and when they are created. This automatic initialization is performed through the use of the constructor functions. 
+
+Declaration of Constructor 
+
+A constructor function is a special function that is a member of the class and has the same name as that of the class. For example here is how the add class looks when converted to use a constructor function for initialization. 
+
+class add
+{
+	private:
+		int num1, num2, num3;
+	public:
+		add(); //Constructor
+		void input(int,int);
+		void sum();
+		void disp();
+};
+
+===========Destructor============
+
+Need for Destructors : Destructor are function that are complimentary to constructors. They de-initialize objects when they are destroyed. A destructor in invoked when an object of the class goes out of scope or  when the memory occupied by it is deallocated using the delete operator.
+
+Declaration of Destructor
+
+A destructor is a function that has the same name as that of the class but is prefized with a  tilde (~) symbol. Overloading a destructor is not possible and can be explicitely invoked. In other words a class can have only one destructor. A destructor can not take argument or specify a return value, or explicitely return  a value.
+
+==================== EXAMPLE OF CONSTRUCTOR AND DESTRUCTOR ===========
+#include<iostream.h>
+#include<conio.h>
+class A
+{
+	public:
+	A()
+	{
+	cout<<" Constructor A invoked \n";
+	}
+
+	~A()
+	{
+	cout<<" Destructor A invoked \n";
+	}
+};
+
+class B
+{
+	public:
+	B()
+	{
+	cout<<" Constructor B invoked \n";
+	}
+
+	~B()
+	{
+	cout<<" Destructor B invoked \n";
+	}
+};
+
+class C:virtual public A
+{
+	public:
+	C()
+	{
+	cout<<" Constructor C invoked \n";
+	}
+
+	~C()
+	{
+	cout<<" Destructor C invoked \n";
+	}
+};
+
+class D:virtual public A
+{
+	public:
+	D()
+	{
+	cout<<" Constructor D invoked \n";
+	}
+
+	~D()
+	{
+	cout<<" Destructor D invoked \n";
+	}
+};
+
+class E
+{
+	public:
+	E()
+	{
+	cout<<" Constructor E invoked \n";
+	}
+
+	~E()
+	{
+	cout<<" Destructor E invoked \n";
+	}
+};
+
+class F:public B, public C, public D
+{
+	private:
+		E E;
+	public:
+	F()
+	{
+	cout<<" Constructor F invoked \n";
+	}
+
+	~F()
+	{
+	cout<<" Destructor F invoked \n";
+	}
+};
+
+void main()
+{
+F F;
+cout<<"Program Over \n";
+}
+

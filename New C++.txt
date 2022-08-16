@@ -1,0 +1,242 @@
+An Object is a collection of related variables and functions bound together to form a higher class entity. The Variables define the state of the objecct while the functions or methods define the actions the can be performed on the object.
+
+An object can be constracted, destroyed and copied onto another object. This is achived by using constructors and destructors.
+
+Class- A class is a user define data type which holds both the data and function. The internal data of a class is called member data(or data member) and the functions are called member function.
+
+	The member function are mainly used tomainipulate the internal data of a class. The variables of a class are called object or instance of a class. A collection of classes make up a large program. A class offer three levels of accessibility .
+	a. Private
+	b. Protected
+	c. Public.
+
+Syntax to declare class 
+
+	class <name of the class>
+	{
+		private:
+		member1;
+		member2;
+		(Variable is declared here)
+		public:
+		member1;
+		member2;
+		(functions are declared here)
+	};		
+syntax for object declaration 
+	class name object variable;
+	Ex 
+		sum s;
+	
+
+Input 2 number and print the sum through class and objet.
+
+#include<iostream.h>
+class theory
+{
+	private:
+		int a,b,s;
+	public:
+		void input()
+		{
+			cout<<" INput two No";
+			cin>>a>>b;
+
+		}
+		void cal()
+		{
+			s=a+b;
+			cout<<" The Sum is "<<s;
+		}
+};
+ void main()
+{
+	theory z;
+	z.input();
+	z.cal();
+} 
+
+WAP to input a number and print the factorial by using class and object.
+#include<iostream.h>
+class fact
+{
+	private:
+	int n,i,f;
+
+	public:
+	void input()
+	{
+		cout<<" Input a No";
+		cin>>n;
+	}
+	void clac()
+	{
+		f=1;
+		for(i=1;i<=n;i++)
+		{
+			f=f*i;
+		}
+		cout<<" The Factorial is "<<f;
+	}
+};
+void main()
+{
+	fact f;
+	f.input();
+	f.clac();
+}
+
+
+
+
+
+
+
+
+Scope Resulatiuon Operator (::)
+Like C, C++ is also a block stracture language. The Scope resulation operator (::) is used to access a global variable even if a variable used the same name. Local vbariable can only br accessed within the function that declares them. globale variables can be accessed by any function in a program. C++ resolves this problem by introducing a new operator called as scope resulation operator(::) This can be used to uncovered  a hidden variable.
+
+Syntax :
+	data type  name of the class  :: function name()
+	{
+		
+	}
+
+Scope resulation operator
+
+
+#include<iostream.h>
+class calc
+{
+	int a,b,s,su,m;
+	public:
+	void input ();
+	void add();
+	void sub();
+	void mul();
+	void print();
+};
+void calc::input ()
+{
+	cout<<" Input any two no";
+	cin>>a>>b;
+}
+void calc::add()
+{
+	s=a+b;
+}
+void calc::sub()
+{
+	su=a-b;
+}
+void calc::mul()
+{
+	m=a*b;
+}
+void calc::print()
+{
+	cout<<" \nThe Addition is "<<s;
+	cout<<" \n The Substraction is "<<su;
+	cout<<" \n The Multiplication is "<<m;
+	cout<<" \n The Proigrame is End Thaks";
+}
+main()
+{
+	calc x;
+	x.input();
+	x.add();
+	x.sub();
+	x.mul();
+	x.mul();
+	x.print();
+}
+
+
+
+
+Constructor 
+A constructor is a special member function for automatic initialization of an object. Whenever an object is created the constructor will be called. It is special because its name is the same as the class name. It construct the valus of data members of the calss.
+	The constructor has the same name with the class name and it has no any type like void or int. 
+
+Declaration syntax:
+	class <class name>
+	{
+		private:
+		data member 
+		public:
+		<class name>();
+	};
+
+Ex:
+WAP to input a number and calculate the sum of digits.	
+#include<iostream.h>
+class test
+{
+	private:
+	int n,d,s;
+	public:
+	test()
+	{
+		cout<<" Input a no";
+		cin>>n;
+         		s=0;
+		while(n!=0)
+		{
+			d=n%10;
+			s=s+d;
+			n=n/10;
+		}
+		cout<<" The Sum of digits is "<<s;
+	}
+};
+void main()
+{
+	test t;
+}
+	
+Destructor : 
+	A destructor is a function which gets executed as and when an instance of the class to which it belongs goes out of existence. The destructor is executed automatically when an object of a class is destroyed.
+Declaration syntax:
+	class <name of the class>
+	{
+		private:
+		---------------
+		---------------
+		public:
+		------------------
+		------------------
+		-----------------
+		~ <name of the class>();
+	}
+ WAP to input two no as a and b and claculate the first no to the power 2nd no or a to the power b;
+5	2
+5X 5 =25
+
+
+#include<iostream.h>
+class power
+{
+	private:
+	int a,b,i,p;
+	public:
+	power();
+	~power();
+};
+power::power()
+{
+	cout<<"INput two no as a and b";
+	cin>>a>>b;
+	p=1;
+	for(i=1;i<=b;i++)
+	{
+		p=p*a;
+	}
+	cout<<" The Power of a to the b is "<<p;
+}
+power::~power()
+{
+	cout<<" The Program is Destroyed ";
+}
+void main()
+{
+	power x;
+}
