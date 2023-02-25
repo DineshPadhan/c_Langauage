@@ -556,7 +556,7 @@ void main()
 int a=1;					//INITIALIAZATION
 while(a<=10)				//CONDITION
 {
-printf("\n MIIT Computer Education");		//LOOPBODY
+printf("\nEducation");		//LOOPBODY
 a=a+1;					//INCREMENT
 }
 }
@@ -1111,7 +1111,7 @@ case 7:
 	printf("\n The Factorial Value is %d",c);
 	break;
 case 8:
-	printf("\n\n Thank you for Choosing MIIT Software Pvt. Ltd");
+	printf("\n\n Thank you for Choosing ABC Software Pvt. Ltd");
 	break;
 default:
 	printf("\n !!!! Wrong Input !!!!");
@@ -1499,7 +1499,7 @@ main()
 #include<string.h>
 main()
 {
-	char a[30]="MIIT Computer Education";
+	char a[30]="Computer";
 	printf("\n Upper Case Value is %s",strupr(a));
 }
 
@@ -1508,7 +1508,7 @@ main()
 #include<string.h>
 main()
 {
-	char a[30]="MIIT Computer Education";
+	char a[30]="ABC Computer Education";
 	printf("\n Lower Case Value is %s",strlwr(a));
 }
 
@@ -1517,7 +1517,7 @@ main()
 #include<string.h>
 main()
 {
-	char a[30]="MIIT Computer Education";
+	char a[30]="Computer is My Life";
 	printf("\n Reverse Value is %s",strrev(a));
 }
 
@@ -1577,7 +1577,7 @@ main()
 main()
 {
 	int x;
-	char a[20]="MIIT Computer";
+	char a[20]="Computer";
 	printf("\n The Upper Value is %s",strupr(a));
 }
 
@@ -1587,7 +1587,7 @@ main()
 main()
 {
 	int x;
-	char a[20]="MIIT Computer";
+	char a[20]="Computer";
 	printf("\n The Upper Value is %s",strlwr(a));
 }
 
@@ -1597,7 +1597,7 @@ main()
 main()
 {
 	int x;
-	char a[20]="MIIT Computer";
+	char a[20]="Computer";
 	printf("\n The Upper Value is %s",strrev(a));
 }
 

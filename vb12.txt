@@ -367,7 +367,7 @@ With Form1
 .Top = 0
 .Height = 5000
 .Width = 9000
-.Caption = "MIIT"
+.Caption = "ABC"
 .BackColor = vbGreen
 End With
 End Sub
@@ -376,7 +376,7 @@ End Sub
 EXAMPLE OF INPUT BOX
 
 Private Sub Command1_Click()
-a = InputBox("Enter the 1st Number", "MIIT Project", 20, 5000, 5000)
+a = InputBox("Enter the 1st Number", "ABCD Project", 20, 5000, 5000)
 For b = 1 To a
 Print b
 Next
@@ -385,10 +385,10 @@ End Sub
 EXAMPLE OF MESSAGE BOX
 
 Private Sub Command1_Click()
-a = InputBox("Enter the 1st Number", "MIIT Project", 20, 5000, 5000)
-b = InputBox("Enter the 2nd Number", "MIIT Project", 32, 5000, 5000)
+a = InputBox("Enter the 1st Number", "ABCD Project", 20, 5000, 5000)
+b = InputBox("Enter the 2nd Number", "ABCD Project", 32, 5000, 5000)
 c = Val(a) + Val(b)
-MsgBox "The Addition Result is " & c, vbYesNo, "MIIT Answer"
+MsgBox "The Addition Result is " & c, vbYesNo, "Answer"
 End Sub
 ===========================
 MenuBar Designing = three Method
@@ -499,7 +499,7 @@ End Sub
 - Delete all the Existing  Code 
 --------- Code -----------
 Private Sub cmdOK_Click()
-If txtUserName.Text = "saroj" And txtPassword.Text = "miit" Then
+If txtUserName.Text = "saroj" And txtPassword.Text = "ABCD" Then
     Load Form1
     Form1.Show
     Unload frmLogin
@@ -691,7 +691,7 @@ End Sub
 ================== Status Bar =================
 - Draw a Statusbar1 on MDIform1
 - Right Click on Statusbar1 => Properties => Panels
-	Panel1 => Text => MIIT Computers Pvt. Ltd
+	Panel1 => Text => ABCD Computers Pvt. Ltd
 	Panel2 => Style => Caps
 	Panel3 => Style => NumLock
 	Panel4 => Style => ScrollLock
@@ -750,7 +750,7 @@ End If
 End Sub
 
 Private Sub Command13_Click()
-If Text1 = "miit" And Text2 = "123" Then
+If Text1 = "ABCD" And Text2 = "123" Then
     Text3 = "Welcome Login"
 Else
     Text3 = "Sorry Try Again !"
